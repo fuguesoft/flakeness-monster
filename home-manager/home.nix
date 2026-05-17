@@ -2,6 +2,7 @@
   config,
   pkgs,
   lib,
+  inputs,
   ...
 }:
 
@@ -57,6 +58,7 @@
     calcurse
     cmatrix
     # codeberg-cli # archived
+    # concord
     cpufetch
     # dia
     ddgr
@@ -86,6 +88,7 @@
     # iamb # crazy compilation time
     inetutils
     inkscape
+    inputs.yt-x.packages."${system}".default
     isort
     kdePackages.kdenlive
     kjv
@@ -133,6 +136,7 @@
     # schismtracker
     scli
     sherlock
+    showmethekey
     sioyek
     slides
     solvespace

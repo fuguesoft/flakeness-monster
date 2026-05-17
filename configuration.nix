@@ -159,6 +159,14 @@
     package = pkgs.espanso-wayland;
   };
 
+  # resolve conflict between keyd and libinput that interferes with dwt
+  environment.etc."libinput/local-overrides.quirks".text = pkgs.lib.mkForce ''
+    [Serial Keyboards]
+    MatchUdevType=keyboard
+    MatchName=keyd virtual keyboard
+    AttrKeyboardIntegration=internal
+  '';
+
   services.keyd = {
     enable = true;
     keyboards = {
@@ -214,6 +222,7 @@
     brightnessctl
     btop
     chafa
+    inputs.concord.packages.${system}.default
     elinks
     fd
     foot

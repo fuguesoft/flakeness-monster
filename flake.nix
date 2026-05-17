@@ -19,6 +19,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.quickshell.follows = "quickshell";
     };
+    concord = {
+      url = "github:chojs23/concord";
+    };
+    yt-x = {
+      url = "github:Benexl/yt-x";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -53,8 +60,9 @@
       homeConfigurations = {
         "fugue" = homeManagerConfiguration {
           inherit pkgs;
+          extraSpecialArgs = { inherit inputs; };
           modules = [
-            ./home.nix
+            ./home-manager/home.nix
             # mnw.homeManagerModules.mnw
           ];
 
