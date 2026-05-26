@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
   programs.firefox = {
     enable = true;
@@ -9,11 +9,12 @@
       "jp"
     ];
 
-    nativeMessagingHosts = with pkgs; [
-      tridactyl-native
-    ];
+    # nativeMessagingHosts = with pkgs; [
+    #   tridactyl-native
+    # ];
 
     # nativeMessagingHosts = [];
+    configPath = "${config.xdg.configHome}/mozilla/firefox";
 
     policies = {
       Cookies = {

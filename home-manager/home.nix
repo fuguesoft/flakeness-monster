@@ -85,6 +85,7 @@
     help2man
     heroic
     hyfetch
+    iamb
     # iamb # crazy compilation time
     inetutils
     inkscape
@@ -301,7 +302,7 @@
   };
   # services.poweralertd.enable = true;
 
-  programs.lutris.enable = true;
+  # programs.lutris.enable = true;
 
   programs.wallust = {
     enable = true;
