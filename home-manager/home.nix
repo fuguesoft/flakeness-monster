@@ -49,7 +49,7 @@
     blender
     blockbench
     # bottles # flatpak
-    # bluebubbles
+    bluebubbles
     bibletime
     bulletty
     # package to watch/package?
@@ -60,7 +60,7 @@
     # codeberg-cli # archived
     # concord
     cpufetch
-    # dia
+    dia
     ddgr
     dialog
     discordo
@@ -88,7 +88,7 @@
     # iamb # crazy compilation time
     inetutils
     inkscape
-    inputs.yt-x.packages."${system}".default
+    # inputs.yt-x.packages."${system}".default
     isort
     kdePackages.kdenlive
     kjv
@@ -192,7 +192,7 @@
     })
     # weechat-matrix-rs # heavy compile
     wf-recorder
-    # wikiman
+    # wikiman # non-editable sources
     # winboat
     wiki-tui
     wine-wayland
@@ -200,7 +200,8 @@
     wiremix
     xdg-ninja
     xdg-user-dirs
-    # xdg-desktop-portal-termfilechooser
+    xdg-desktop-portal-termfilechooser
+    xeyes
     yewtube
     youtube-tui
     ytfzf

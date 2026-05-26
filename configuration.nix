@@ -74,7 +74,7 @@
     fugue = {
       shell = pkgs.fish;
       isNormalUser = true;
-      extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+      extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user.
       packages = with pkgs; [
         tree
         keyd
@@ -222,7 +222,7 @@
     brightnessctl
     btop
     chafa
-    inputs.concord.packages.${system}.default
+    # inputs.concord.packages.${system}.default
     elinks
     fd
     foot
@@ -285,6 +285,7 @@
     wget
     wikiman # -- external sources broken
     wl-clipboard
+    # xdg-desktop-portal-termfilechooser
     xwayland-satellite
     # KDE Utilities
     # kdePackages.discover # Optional: Software center for Flatpaks/firmware updates
