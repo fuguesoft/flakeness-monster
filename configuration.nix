@@ -31,9 +31,15 @@
     options v4l2loopback devices=1 video_nr=1 card_label="OBS Cam" exclusive_caps=1
   '';
 
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
+  hardware = {
+    bluetooth = {
+      enable = true;
+      powerOnBoot = false;
+    };
+    graphics = {
+      enable = true;
+      enable32Bit = true;
+    };
   };
 
   # Set your time zone.
@@ -60,7 +66,10 @@
 
   networking = {
     firewall = {
-      allowedTCPPorts = [ 6697 6667 ];
+      allowedTCPPorts = [
+        6697
+        6667
+      ];
       checkReversePath = false;
     };
     hostName = "indigo"; # Define your hostname.
@@ -74,7 +83,10 @@
     fugue = {
       shell = pkgs.fish;
       isNormalUser = true;
-      extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user.
+      extraGroups = [
+        "wheel"
+        "networkmanager"
+      ]; # Enable ‘sudo’ for the user.
       packages = with pkgs; [
         tree
         keyd
@@ -335,12 +347,12 @@
     ];
 
   nix.settings = {
-    substituters = [ 
-      # "https://graphite.cachix.org" 
+    substituters = [
+      # "https://graphite.cachix.org"
       "https://nix-community.cachix.org"
     ];
-    trusted-public-keys = [ 
-      # "graphite.cachix.org-1:B7Il1yMpkquN/dXM+5GRmz+4Xmu2aaCS1GcWNfFhsOo=" 
+    trusted-public-keys = [
+      # "graphite.cachix.org-1:B7Il1yMpkquN/dXM+5GRmz+4Xmu2aaCS1GcWNfFhsOo="
       "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
     ];
 

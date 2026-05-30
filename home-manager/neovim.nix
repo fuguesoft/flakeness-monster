@@ -31,6 +31,8 @@
     vimAlias = true;
     vimdiffAlias = true;
 
+    sideloadInitLua = true;
+
     extraPackages = with pkgs; [
       black
       fish-lsp
