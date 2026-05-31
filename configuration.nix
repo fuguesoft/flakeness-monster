@@ -10,7 +10,6 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    # ./desktop
   ];
 
   # Use the systemd-boot EFI boot loader.
@@ -131,11 +130,12 @@
     # QT_PLUGIN_PATH = [
     #   inputs.qml-niri.packages.${system}.default
     # ];
+    PARALLEL_HOME = "${XDG_CONFIG_HOME}/parallel";
     PYTHON_HISTORY = "${XDG_STATE_HOME}\/python_history";
     SUDO_ASKPASS = "${XDG_BIN_HOME}\/_askpass.sh";
     W3M_DIR = "${XDG_DATA_HOME}\/w3m";
+    WINEPREFIX = "${XDG_DATA_HOME}/wine";
     XCOMPOSECACHE = "${XDG_CACHE_HOME}\/X11/xcompose";
-
   };
 
   programs.droidcam.enable = true;
