@@ -41,25 +41,36 @@
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
+
+    # A
     asciinema
-    # aseprite
+    asak
+    aseprite
+    atac
+
+    # B
     bat
     # bitwig-studio
     btop
     blender
     blockbench
-    # bottles # flatpak
+    # bottles # using flatpak
     bluebubbles
+    bluetui
     bibletime
     bulletty
     # package to watch/package?
     # https://codeberg.org/janantos/brow6el
+
+    # C
     # cinny-desktop
     calcurse
     cmatrix
     # codeberg-cli # archived
-    # concord
+    # concord-discord # needs packaging
     cpufetch
+
+    # D
     dia
     ddgr
     dialog
@@ -67,8 +78,12 @@
     dmenu-wayland
     dragon-drop
     dunst
+
+    # E
     # enola
     espanso
+
+    # F
     f3
     fastfetch
     ffmpeg
@@ -76,23 +91,37 @@
     forgejo-cli
     # fluffychat
     freecad
+    furnace
+
+    # G
     gh
     godot
     goldendict-ng
     graphite
     groff
+    gurk-rs
+
+    # H
     havn
     help2man
     heroic
     hyfetch
-    iamb
-    # iamb # crazy compilation time
+
+    # I
+    iamb # crazy compilation time
     inetutils
     inkscape
     # inputs.yt-x.packages."${system}".default
     isort
+
+    # J
+
+    # K
+    kanban
     kdePackages.kdenlive
     kjv
+
+    # L
     lazygit
     legcord
     lexy
@@ -101,6 +130,8 @@
     localsend
     lue
     # lutris - requires steam
+
+    # M
     man
     man-pages
     mandown
@@ -110,34 +141,60 @@
     # mdbook-man
     # milkytracker
     mpv
+
+    # N
     neomutt
     nethack
+    nom
     nsxiv
+    (pkgs.writeShellApplication {
+      name = "ntv";
+      runtimeInputs = with pkgs; [
+        fzf
+        nix-search-tv
+      ];
+      # text = builtins.readFile "${pkgs.nix-search-tv.src}/nixpkgs.sh";
+      text = builtins.readFile "${config.home.homeDirectory}/.local/bin/nixpkgs.sh";
+    })
+
+    # O
     obs-cli
     openscad
     openvpn
+
+    # P
     (pass.withExtensions (e: [
       e.pass-otp
     ]))
+    pastel
     penpot-desktop
     photoflare
     pixieditor
     portal
     pqiv
-    proton-vpn
-    # proton-vpn-cli
+    # proton-vpn
+    proton-vpn-cli
     pureref
+
+    # Q
     qiv
     # qmlls
     kdePackages.qtdeclarative
     qrencode
+    qrtool
+
+    # R
     # reaper
     reddix
     ripgrep
+    rgx
+
+    # S
     # schismtracker
-    scli
+    # scli
+    sc-im
     sherlock
-    showmethekey
+    # showmethekey
     sioyek
     slides
     solvespace
@@ -146,30 +203,40 @@
     streamlink
     streamlink-twitch-gui-bin
     # sway
-    # swaybg
+    swaybg
     stremio-linux-shell # outdated qt-engine dependency
+
+    # T
     tagainijisho
-    tealdeer
-    teensy-loader-cli
+    # taskwarrior3
+    # taskwarrior-tui
     tcpdump
+    # tealdeer # replace tealdeer
+    teensy-loader-cli
     # tic-80 - requires insecure
     # whole buncha tmux plugins
+    tlrc
     tintin
     toilet
     tor
     tran
     trash-cli
     tuir
+    tukai
     #typing - choose one
-    thokr
     ttyper
-    typeinc
+    typespeed
     typioca
-    typtea
-    # verse # gonna package this
+
+    # U
     # upower
+
+    # V
+    # verse # gonna package this
     vesktop
     vimiv-qt
+
+    # W
     warpd
     waybar
     webcamize
@@ -199,15 +266,21 @@
     wine-wayland
     winetricks
     wiremix
+
+    # X
     xdg-ninja
     xdg-user-dirs
     xdg-desktop-portal-termfilechooser
     xeyes
+
+    # Y
     yewtube
     youtube-tui
     ytfzf
     yt-dlp
     ytdl-sub
+
+    # Z
     zbar
   ];
 
@@ -307,6 +380,11 @@
   programs.wallust = {
     enable = true;
   };
+
+  # programs.nix-search-tv = {
+  #   enable = true;
+  #   enableTelevisionIntegration = true;
+  # };
 
   # programs.wshowkeys = {
   #   enable = true;

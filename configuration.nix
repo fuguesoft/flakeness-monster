@@ -121,6 +121,9 @@
     # What's the syntax here for defining this?
     # Use `rec`
     HISTFILE = "${XDG_STATE_HOME}\/bash/history";
+    NIRIDOC = "${pkgs.niri.doc}/share/doc/niri/wiki";
+    # getDoc is darwin only
+    # NIRIDOC = "${pkgs.lib.getDoc pkgs.niri}/share/doc/niri/wiki";
     PASSWORD_STORE_DIR = "${XDG_DATA_HOME}\/pass";
     PATH = [
       "${XDG_BIN_HOME}"

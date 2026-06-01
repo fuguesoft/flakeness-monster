@@ -172,25 +172,26 @@
             "URLTemplate" =
               "https://search.nixos.org/options?include_modular_service_options=1&include_nixos_options=1&query={searhTerms}";
             "Alias" = "@no";
-
           }
           {
             "Name" = "nixwiki";
             "URLTemplate" = "https://nixos.wiki/index.php?search={searchTerms}";
             "Alias" = "@nwk";
-
           }
           {
             "Name" = "nixofficial";
             "URLTemplate" = "https://wiki.nixos.org/w/index.php?search={searchTerms}";
             "Alias" = "@nw";
-
           }
           {
             "Name" = "home manager options";
             "URLTemplate" = "https://home-manager-options.extranix.com/?query={searchTerms}";
             "Alias" = "@hmo";
-
+          }
+          {
+            "Name" = "mynixos";
+            "URLTemplate" = "https://mynixos.com/search?q={searchTerms}";
+            "Alias" = "@mn";
           }
         ];
         "Default" = "ddgno";

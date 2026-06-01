@@ -9,4 +9,8 @@
       color = "233948";
     };
   };
+  # maybe temporary
+  # services.wpaperd = {
+  #   enable = true;
+  # };
 }

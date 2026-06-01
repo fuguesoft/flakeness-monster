@@ -9,12 +9,13 @@
       "jp"
     ];
 
-    # nativeMessagingHosts = with pkgs; [
-    #   tridactyl-native
-    # ];
+    nativeMessagingHosts = with pkgs; [
+      tridactyl-native
+    ];
+
+    configPath = "${config.xdg.configHome}/mozilla/firefox";
 
     # nativeMessagingHosts = [];
-    configPath = "${config.xdg.configHome}/mozilla/firefox";
 
     policies = {
       Cookies = {
