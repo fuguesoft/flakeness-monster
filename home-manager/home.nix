@@ -147,15 +147,15 @@
     nethack
     nom
     nsxiv
-    (pkgs.writeShellApplication {
-      name = "ntv";
-      runtimeInputs = with pkgs; [
-        fzf
-        nix-search-tv
-      ];
-      # text = builtins.readFile "${pkgs.nix-search-tv.src}/nixpkgs.sh";
-      text = builtins.readFile "${config.home.homeDirectory}/.local/bin/nixpkgs.sh";
-    })
+    # (pkgs.writeShellApplication {
+    #   name = "ntv";
+    #   runtimeInputs = with pkgs; [
+    #     fzf
+    #     nix-search-tv
+    #   ];
+    #   # text = builtins.readFile "${pkgs.nix-search-tv.src}/nixpkgs.sh";
+    #   text = builtins.readFile "${config.home.homeDirectory}/.local/bin/nixpkgs.sh";
+    # })
 
     # O
     obs-cli
