@@ -53,6 +53,8 @@
         ControlPersist 600
         AddKeysToAgent yes
     '';
+    # allows for setting extraConfig
+    settings."*" = { };
     # matchBlocks."*" = { };
 
   };
