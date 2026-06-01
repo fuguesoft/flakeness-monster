@@ -7,7 +7,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     # mnw.url = "github:Gerg-L/mnw";
     home-manager = {
-      url = "github:nix-community/home-manager/release-25.11";
+      url = "github:nix-community/home-manager/release";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     quickshell = {
@@ -50,9 +50,9 @@
         indigo = nixosSystem {
           inherit system;
           specialArgs = { inherit inputs; };
-          modules = [ 
-            ./configuration.nix 
-            ./desktop 
+          modules = [
+            ./configuration.nix
+            ./desktop
           ];
         };
         # another hostname
