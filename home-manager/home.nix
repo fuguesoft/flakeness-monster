@@ -373,6 +373,10 @@
     automount = true;
     notify = true;
   };
+
+  programs.iamb = {
+    enable = true;
+  };
   # services.poweralertd.enable = true;
 
   # programs.lutris.enable = true;
