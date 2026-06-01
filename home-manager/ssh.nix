@@ -53,7 +53,7 @@
         ControlPersist 600
         AddKeysToAgent yes
     '';
-    matchBlocks."*" = { };
+    # matchBlocks."*" = { };
 
   };
 
