@@ -366,7 +366,7 @@
     # ./znc.nix
   ];
 
-  programs.man.generateCaches = true;
+  # programs.man.generateCaches = true;
   services.playerctld.enable = true;
   services.udiskie = {
     enable = true;
