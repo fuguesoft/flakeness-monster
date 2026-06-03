@@ -108,7 +108,7 @@
     hyfetch
 
     # I
-    iamb # crazy compilation time
+    iamb # crazy compilation time (broken)
     inetutils
     inkscape
     # inputs.yt-x.packages."${system}".default
@@ -147,6 +147,7 @@
     nethack
     nom
     nsxiv
+    # this was kinda meh and the config file didn't work
     # (pkgs.writeShellApplication {
     #   name = "ntv";
     #   runtimeInputs = with pkgs; [
