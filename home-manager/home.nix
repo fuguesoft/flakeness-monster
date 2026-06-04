@@ -108,7 +108,7 @@
     hyfetch
 
     # I
-    iamb # crazy compilation time (broken)
+    # iamb # crazy compilation time (broken)
     inetutils
     inkscape
     # inputs.yt-x.packages."${system}".default
