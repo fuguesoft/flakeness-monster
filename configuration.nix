@@ -301,6 +301,7 @@
     wikiman # -- external sources broken
     wl-clipboard
     # xdg-desktop-portal-termfilechooser
+    xurls
     xwayland-satellite
     # KDE Utilities
     # kdePackages.discover # Optional: Software center for Flatpaks/firmware updates

@@ -169,7 +169,6 @@
     ]))
     pastel
     penpot-desktop
-    photoflare
     pixieditor
     portal
     pqiv
