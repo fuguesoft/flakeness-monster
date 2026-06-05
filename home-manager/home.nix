@@ -49,6 +49,7 @@
     atac
 
     # B
+    basilk
     bat
     # bitwig-studio
     btop
