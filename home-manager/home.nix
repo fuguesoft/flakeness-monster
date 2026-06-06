@@ -24,6 +24,8 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
 
+  fugue-kabmat = (import ./home/fugue/documentos/dev/nix/flow-kanban/kabmat.nix);
+
   home.packages = with pkgs; [
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
@@ -41,6 +43,7 @@
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
+    fugue-kabmat
 
     # A
     asciinema
