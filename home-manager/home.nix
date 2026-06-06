@@ -235,6 +235,7 @@
     # V
     # verse # gonna package this
     vesktop
+    vhs
     vimiv-qt
 
     # W
