@@ -6,6 +6,9 @@
   ...
 }:
 
+let
+  fugue-kabmat = (import inputs.kabmat).kabmat;
+in
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -25,8 +28,6 @@
   # environment.
 
   # fugue-kabmat = (import /home/fugue/documentos/dev/nix/flow-kanban/kabmat.nix);
-  fugue-kabmat = import inputs.kabmat;
-
   home.packages = with pkgs; [
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
