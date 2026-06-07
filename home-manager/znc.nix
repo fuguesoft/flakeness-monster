@@ -26,7 +26,6 @@
               # "cert"
               "keepnick"
               "kickrejoin"
-              # "nickserv xedxem-rowRib-4forja"
               "sasl"
               "simple_away"
             ];

@@ -383,13 +383,6 @@ in
     notify = true;
   };
 
-  # programs.iamb = {
-  #   enable = true;
-  # };
-  # services.poweralertd.enable = true;
-
-  # programs.lutris.enable = true;
-
   programs.wallust = {
     enable = true;
   };
@@ -397,17 +390,6 @@ in
   # programs.nix-search-tv = {
   #   enable = true;
   #   enableTelevisionIntegration = true;
-  # };
-
-  # programs.wshowkeys = {
-  #   enable = true;
-  # };
-
-  # programs.steam = {
-  #   enable = true;
-  #   remotePlay.openFirewall = true;
-  #   dedicatedServer.openFirewall = true;
-  #   # localNetworkgameTransfers.openFirewall = true;
   # };
 
   home.pointerCursor = {
