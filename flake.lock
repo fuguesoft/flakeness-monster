@@ -111,6 +111,22 @@
         "type": "github"
       }
     },
+    "kabmat": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1780786574,
+        "narHash": "sha256-h1q/C/9t4FRn7yUd/ImwBq9HRlRLDthe3JtL5AYtRy0=",
+        "owner": "fuguesoft",
+        "repo": "packaging-practice",
+        "rev": "6bdb7d1d1543fc09c1517883f94c8a8c6cfa3368",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fuguesoft",
+        "repo": "packaging-practice",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1777954456,
@@ -224,6 +240,7 @@
       "inputs": {
         "concord": "concord",
         "home-manager": "home-manager",
+        "kabmat": "kabmat",
         "nixpkgs": "nixpkgs_2",
         "qml-niri": "qml-niri",
         "quickshell": "quickshell",

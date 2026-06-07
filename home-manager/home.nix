@@ -43,7 +43,7 @@
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
-    fugue-kabmat
+    # fugue-kabmat
 
     # A
     asciinema
