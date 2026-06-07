@@ -25,6 +25,7 @@
   # environment.
 
   # fugue-kabmat = (import /home/fugue/documentos/dev/nix/flow-kanban/kabmat.nix);
+  fugue-kabmat = import inputs.kabmat;
 
   home.packages = with pkgs; [
     # # Adds the 'hello' command to your environment. It prints a friendly
@@ -95,6 +96,7 @@
     forgejo-cli
     # fluffychat
     freecad
+    fugue-kabmat
     furnace
 
     # G
@@ -121,7 +123,7 @@
     # J
 
     # K
-    inputs.kabmat
+    # inputs.kabmat
     kanban
     kdePackages.kdenlive
     kjv
