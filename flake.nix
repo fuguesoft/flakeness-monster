@@ -26,6 +26,10 @@
       url = "github:Benexl/yt-x";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    kabmat = {
+      url = "github:fuguesoft/packaging-practice";
+      flake = false;
+    };
   };
 
   outputs =
