@@ -114,11 +114,11 @@
     "kabmat": {
       "flake": false,
       "locked": {
-        "lastModified": 1780894787,
-        "narHash": "sha256-lRelLx3agOjsb2ADGl/RZEKCCSM8y2j9H18FNgT487A=",
+        "lastModified": 1780895142,
+        "narHash": "sha256-YPBPUJc32bnz7aBeVWUuvXJUSDz2LWivtEEwvY23JVo=",
         "owner": "fuguesoft",
         "repo": "packaging-practice",
-        "rev": "888fa8d7b7550fef4704b9596b1a64ad6d2062e1",
+        "rev": "56872cdc578171721ad91e3d69ee9990fcbf3dab",
         "type": "github"
       },
       "original": {
