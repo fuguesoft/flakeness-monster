@@ -125,6 +125,7 @@ in
 
     # K
     # inputs.kabmat
+    kabmat
     kanban
     kdePackages.kdenlive
     kjv
