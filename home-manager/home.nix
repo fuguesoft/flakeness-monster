@@ -176,7 +176,7 @@ in
     pixieditor
     portal
     pqiv
-    # proton-vpn
+    proton-vpn
     proton-vpn-cli
     pureref
 
