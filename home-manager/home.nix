@@ -7,7 +7,7 @@
 }:
 
 let
-  fugue-kabmat = (import inputs.kabmat).kabmat;
+  fugue-kabmat = (import inputs.kabmat { inherit pkgs; }).kabmat;
 in
 {
   # Home Manager needs a bit of information about you and the paths it should
