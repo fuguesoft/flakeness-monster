@@ -153,6 +153,10 @@
     enableSSHSupport = true;
   };
 
+  programs.mangowc = {
+    enable = true;
+  };
+
   programs.niri = {
     enable = true;
   };
@@ -227,7 +231,15 @@
 
   services.udisks2.enable = true;
 
-  virtualisation.libvirtd.enable = true;
+  virtualisation = {
+    # waydroid = {
+    #   enable = true;
+    #   package = pkgs.waydroid-nftables;
+    # };
+    libvirtd = {
+      enable = true;
+    };
+  };
   programs.virt-manager.enable = true;
   programs.obs-studio.enableVirtualCamera = true;
   # List packages installed in system profile.

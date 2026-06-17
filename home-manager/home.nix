@@ -217,7 +217,7 @@ in
     tcpdump
     # tealdeer # replace tealdeer
     teensy-loader-cli
-    # tic-80 - requires insecure
+    # tic-80 # requires insecure
     # whole buncha tmux plugins
     tlrc
     tintin

@@ -189,9 +189,9 @@
             "Alias" = "@hmo";
           }
           {
-            "Name" = "mynixos";
+            "Name" = "my nixos";
             "URLTemplate" = "https://mynixos.com/search?q={searchTerms}";
-            "Alias" = "@mn";
+            "Alias" = "@mnc";
           }
         ];
         "Default" = "ddgno";
