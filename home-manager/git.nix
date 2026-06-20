@@ -10,14 +10,14 @@
       # includeIf = {
       #   "gitdir:~/documentos/personal/**".path = "~/documentos/personal/.gitconfig";
       # };
-      includes = [
-        {
-          condition = "gitdir:~/documentos/personal/**";
-          path = "~/documentos/personal/.gitconfig";
-        }
-      ];
       init.defaultbranch = "main";
     };
+    includes = [
+      {
+        condition = "gitdir:~/documentos/personal/**";
+        path = "~/documentos/personal/.gitconfig";
+      }
+    ];
   };
 
   programs.gh = {
