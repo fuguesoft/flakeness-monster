@@ -26,6 +26,13 @@
         IdentityFile ~/.ssh/change_ed25519
         IdentitiesOnly yes
 
+      # work hub
+      Host work.github.com
+        HostName github.com
+        User git
+        IdentityFile ~/.ssh/_hub_ed25519_work
+        IdentitiesOnly yes
+
       # Personal github account
       Host github.com
         HostName github.com
