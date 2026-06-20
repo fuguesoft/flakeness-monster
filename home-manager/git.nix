@@ -7,9 +7,15 @@
         name = "fuguesoft";
         email = "31870368+fuguesoft@users.noreply.github.com";
       };
-      includeIf = {
-        "gitdir:~/documentos/personal/**".path = "~/documentos/personal/.gitconfig";
-      };
+      # includeIf = {
+      #   "gitdir:~/documentos/personal/**".path = "~/documentos/personal/.gitconfig";
+      # };
+      includes = [
+        {
+          condition = "gitdir:~/documentos/personal/**";
+          path = "~/documentos/personal/.gitconfig";
+        }
+      ];
       init.defaultbranch = "main";
     };
   };
