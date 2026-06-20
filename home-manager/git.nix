@@ -13,6 +13,10 @@
 
   programs.gh = {
     enable = true;
+    settings = {
+      telemetry = false;
+      doNotTrack = true;
+    };
   };
 
   # Git
