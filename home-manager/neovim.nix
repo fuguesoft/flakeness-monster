@@ -35,6 +35,7 @@
 
     extraPackages = with pkgs; [
       black
+      deno
       fish-lsp
       gcc
       gdscript-formatter
