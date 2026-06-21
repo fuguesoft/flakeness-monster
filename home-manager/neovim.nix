@@ -35,6 +35,7 @@
 
     extraPackages = with pkgs; [
       black
+      cargo
       deno
       fish-lsp
       gcc
