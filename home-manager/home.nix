@@ -61,7 +61,6 @@ in
     bluetui
     bibletime
     bulletty
-    # bun
     # package to watch/package?
     # https://codeberg.org/janantos/brow6el
 
