@@ -57,7 +57,8 @@
 
     plugins = with pkgs.vimPlugins; [
       nvim-treesitter.withAllGrammars
-      vim-markdown-composer
+      markdown.preview-nvim
+      # vim-markdown-composer
       # fff-nvim
     ];
     withRuby = false;
