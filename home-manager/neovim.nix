@@ -35,6 +35,7 @@
 
     extraPackages = with pkgs; [
       black
+      bun
       cargo
       deno
       fish-lsp
@@ -57,7 +58,7 @@
 
     plugins = with pkgs.vimPlugins; [
       nvim-treesitter.withAllGrammars
-      markdown.preview-nvim
+      markdown-preview-nvim
       # vim-markdown-composer
       # fff-nvim
     ];
