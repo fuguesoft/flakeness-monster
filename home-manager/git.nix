@@ -14,7 +14,7 @@
     };
     includes = [
       {
-        condition = "gitdir:~/documentos/personal/**";
+        condition = "gitdir:~/documentos/_personal/**";
         path = "~/documentos/personal/.gitconfig";
       }
     ];
