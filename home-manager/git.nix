@@ -28,6 +28,10 @@
     };
   };
 
+  programs.gh-dash = {
+    enable = true;
+  };
+
   # Git
   # programs.git = {
   #   enable = true;
