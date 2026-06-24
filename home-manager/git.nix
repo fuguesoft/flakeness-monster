@@ -34,6 +34,7 @@
       defaults = {
         view = "notifications";
         confirmQuit = true;
+        includeReadNotifications = false;
       };
 
     };
