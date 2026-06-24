@@ -30,6 +30,13 @@
 
   programs.gh-dash = {
     enable = true;
+    settings = {
+      defaults = {
+        view = "notifications";
+        confirmQuit = true;
+      };
+
+    };
   };
 
   # Git
