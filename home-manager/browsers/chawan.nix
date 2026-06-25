@@ -4,7 +4,7 @@
     enable = true;
     settings = {
       page = {
-        T = "() =&gt; pager.load('ddg:')";
+        s = "() => pager.load('ddg:')";
       };
 
     };

@@ -145,6 +145,7 @@ in
     # mdbook-man
     # milkytracker
     mpv
+    musescore
 
     # N
     neomutt
