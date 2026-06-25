@@ -33,9 +33,9 @@
     settings = {
       defaults = {
         view = "notifications";
-        confirmQuit = true;
-        includeReadNotifications = false;
       };
+      confirmQuit = true;
+      includeReadNotifications = false;
 
     };
   };
