@@ -5,6 +5,7 @@
     settings = {
       page = {
         s = "() => pager.load('ddg:')";
+        t = "() => pager.load";
       };
 
     };
