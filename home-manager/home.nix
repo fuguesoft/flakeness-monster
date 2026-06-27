@@ -93,7 +93,7 @@ in
     forgejo-cli
     # fluffychat
     freecad
-    fugue-kabmat
+    # fugue-kabmat
     furnace
 
     # G
