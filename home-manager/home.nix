@@ -118,6 +118,7 @@ in
     isort
 
     # J
+    jmtpfs
 
     # K
     # inputs.kabmat
