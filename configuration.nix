@@ -339,6 +339,7 @@
   services.usbmuxd.enable = true;
 
   fileSystems."/run/media/fugue/OP-1" = {
+    enable = true;
     options = [
       "users"
       "nofail"
