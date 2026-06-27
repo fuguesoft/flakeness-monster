@@ -179,7 +179,7 @@ in
     pqiv
     proton-vpn
     proton-vpn-cli
-    pureref
+    # pureref
 
     # Q
     qiv
