@@ -44,6 +44,7 @@ in
     # fugue-kabmat
 
     # A
+    android-file-transfer
     asciinema
     asak
     aseprite
