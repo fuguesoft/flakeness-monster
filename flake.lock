@@ -8,11 +8,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1780848880,
-        "narHash": "sha256-MyKnbU4iB6H9qH0QKIvMIvimZvWBPkXmkvKfDkoRCvo=",
+        "lastModified": 1782527202,
+        "narHash": "sha256-iFps1BmUsF6yhhfHv6HRf+dyXiSADpTZWZjlffNmEFE=",
         "owner": "chojs23",
         "repo": "concord",
-        "rev": "5a3f3bf6ce62f2cbea6c0964011a0a3efec60945",
+        "rev": "4e1288a3b13bd6171540bf09fb8ca0a2fa3ef4ad",
         "type": "github"
       },
       "original": {
@@ -97,11 +97,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1780883961,
-        "narHash": "sha256-WU6SUrESuPiEXEUvX4D51AgWrXRJty+sLJBwBaDBGqE=",
+        "lastModified": 1781981105,
+        "narHash": "sha256-/1nNBbA7PrSQpTc9Qazkhl4kIPg+TNl0CjxS3UQJKlw=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "4eb4fec41674d5b059aa2eedf0f98453890546fa",
+        "rev": "7bfff44b465909f69a442701293bc0badcf476dc",
         "type": "github"
       },
       "original": {
@@ -114,11 +114,11 @@
     "kabmat": {
       "flake": false,
       "locked": {
-        "lastModified": 1780898185,
-        "narHash": "sha256-urKbi4PTH9eTnC0RHmLX86d3GZrbag9HKFZJV38plEg=",
+        "lastModified": 1781491902,
+        "narHash": "sha256-d742alHjw+WOw/LhcQAi8qRI00Ew1yIEvVJFOCpPRlE=",
         "owner": "fuguesoft",
         "repo": "packaging-practice",
-        "rev": "fc84b3f83a1d6328c958a8cca1b395ac782415a5",
+        "rev": "9d6133684cb493f5a0a17f3a41ef4442152f72ad",
         "type": "github"
       },
       "original": {
@@ -160,11 +160,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1780902259,
-        "narHash": "sha256-q8yYEC5f1mFlQO9RGna4LTc9QrcvWunX6FYp83munkQ=",
+        "lastModified": 1782375420,
+        "narHash": "sha256-wiPYmEuHbJvleW489n6+lamL7JSJg3pcKUYwURU9CkI=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "bd0ff2d3eac24699c3664d5966b9ef36f388e2ca",
+        "rev": "4062d36ebeae843c750011eef6b61ec9a9dbc9a9",
         "type": "github"
       },
       "original": {
@@ -223,11 +223,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1780303737,
-        "narHash": "sha256-7HgdJBG4BgAPDyHKKxWtxj7nziqsQo6zQCXtwy+L9fs=",
+        "lastModified": 1781847791,
+        "narHash": "sha256-Mo2YtNEGlcySnbq0YuP3nUKMAQCMAfE+TcCffo5vzD8=",
         "ref": "refs/heads/master",
-        "rev": "b66495fcc5022681b56b61f928c7acbe910e722c",
-        "revCount": 821,
+        "rev": "68c2c85c33845385f7ab8147b32f1450b1e468e0",
+        "revCount": 824,
         "type": "git",
         "url": "https://git.outfoxxed.me/outfoxxed/quickshell"
       },
@@ -324,11 +324,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1780910878,
-        "narHash": "sha256-ZKnME9tFNsFnhovjm4eLINenk0reCr/PZ9YZKGfhuqQ=",
+        "lastModified": 1781363265,
+        "narHash": "sha256-GL6jPjOZjvSZEwDf4AJVAoGBedjB+WljkDlvwf3xSaQ=",
         "owner": "Benexl",
         "repo": "yt-x",
-        "rev": "65ab36864e8ea6a19b661e10c69cce1b2d86f658",
+        "rev": "fbd2669c10f3d8a559b95c8a647da083e6178254",
         "type": "github"
       },
       "original": {
