@@ -338,14 +338,16 @@
 
   services.usbmuxd.enable = true;
 
-  fileSystems."/run/media/fugue/OP-1" = {
-    enable = true;
-    options = [
-      "users"
-      "nofail"
-      "exec"
-    ];
-  };
+  # fileSystems."/run/media/fugue/OP-1" = {
+  #   device = "/james";
+  #   fsType = "ext4";
+  #   enable = true;
+  #   options = [
+  #     "users"
+  #     "nofail"
+  #     "exec"
+  #   ];
+  # };
 
   fonts.packages = with pkgs; [
     nerd-fonts.victor-mono
