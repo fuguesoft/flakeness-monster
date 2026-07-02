@@ -30,7 +30,7 @@
       url = "github:fuguesoft/packaging-practice";
       flake = false;
     };
-    affinity-nix.url = "github:mrshmllw/affinity-nix";
+    affinity-nix.url = "github:mrshmllow/affinity-nix";
   };
 
   outputs =
