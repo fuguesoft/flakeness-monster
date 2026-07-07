@@ -223,11 +223,11 @@
   #   enabled = true;
   # };
 
-  security.pam.services.fugue.gnupg = {
-    enable = true;
-    storeOnly = true;
-    noAutostart = true;
-  };
+  # security.pam.services.fugue.gnupg = {
+  #   enable = true;
+  #   storeOnly = true;
+  #   noAutostart = true;
+  # };
 
   security.polkit.enable = true;
   services.upower = {
