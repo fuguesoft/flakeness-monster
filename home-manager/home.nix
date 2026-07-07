@@ -310,6 +310,8 @@ in
   nixpkgs.config.allowUnfreePredicate =
     pkg:
     builtins.elem (lib.getName pkg) [
+      "affinity-v3"
+      "affinity-extracted-sources"
       "bitwig-studio-unwrapped"
       "aseprite"
       "graphite"

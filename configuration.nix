@@ -151,6 +151,9 @@
     enable = true;
     pinentryPackage = pkgs.pinentry-curses;
     enableSSHSupport = true;
+    settings = {
+      allow-preset-passphrase = true;
+    };
   };
 
   programs.mangowc = {
@@ -176,6 +179,10 @@
   services.espanso = {
     enable = true;
     package = pkgs.espanso-wayland;
+  };
+
+  services.fprintd = {
+    enable = true;
   };
 
   # resolve conflict between keyd and libinput that interferes with dwt

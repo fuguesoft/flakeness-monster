@@ -193,7 +193,7 @@
           {
             "Name" = "my nixos";
             "URLTemplate" = "https://mynixos.com/search?q={searchTerms}";
-            "Alias" = "@mnc";
+            "Alias" = "@nx";
           }
         ];
         "Default" = "ddgno";
