@@ -151,9 +151,9 @@
     enable = true;
     pinentryPackage = pkgs.pinentry-curses;
     enableSSHSupport = true;
-    settings = {
-      allow-preset-passphrase = true;
-    };
+    # settings = {
+    #   allow-preset-passphrase = true;
+    # };
   };
 
   programs.mangowc = {
