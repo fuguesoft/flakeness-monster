@@ -225,6 +225,7 @@
 
   security.pam.services.fugue.gnupg = {
     enable = true;
+    storeOnly = true;
   };
 
   security.polkit.enable = true;
