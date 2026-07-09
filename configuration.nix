@@ -151,6 +151,7 @@
     enable = true;
     pinentryPackage = pkgs.pinentry-curses;
     enableSSHSupport = true;
+    allowPresetPassphrase = true;
     # settings = {
     #   allow-preset-passphrase = true;
     # };
