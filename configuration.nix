@@ -151,7 +151,7 @@
     enable = true;
     pinentryPackage = pkgs.pinentry-curses;
     enableSSHSupport = true;
-    allowPresetPassphrase = true;
+    # allowPresetPassphrase = true;
     # settings = {
     #   allow-preset-passphrase = true;
     # };
@@ -282,7 +282,7 @@
     lynx
     man-pages
     man-pages-posix
-    mangowc
+    # mango
     ncdu
     neovim
     nil
