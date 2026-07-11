@@ -159,6 +159,7 @@
 
   programs.mangowc = {
     enable = true;
+    package = pkgs.mango;
   };
 
   programs.niri = {
@@ -268,7 +269,6 @@
     gnumake
     gphoto2
     greetd
-    hello
     home-manager
     ifuse
     inxi
