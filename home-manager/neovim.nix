@@ -34,6 +34,7 @@
     sideloadInitLua = true;
 
     extraPackages = with pkgs; [
+      bash-language-server
       black
       bun
       cargo

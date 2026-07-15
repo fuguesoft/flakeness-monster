@@ -36,7 +36,7 @@
       };
       confirmQuit = true;
       includeReadNotifications = false;
-
+      smartFilteringAtLaunch = false;
     };
   };
 

@@ -138,6 +138,7 @@ in
     # lutris - requires steam
 
     # M
+    magic-wormhole
     man
     man-pages
     mandown
