@@ -39,6 +39,9 @@
       enable = true;
       enable32Bit = true;
     };
+    xpadneo = {
+      enable = true;
+    };
   };
 
   # Set your time zone.
