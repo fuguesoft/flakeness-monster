@@ -30,7 +30,10 @@
       url = "github:fuguesoft/packaging-practice";
       flake = false;
     };
-    affinity-nix.url = "github:mrshmllow/affinity-nix";
+    # affinity-nix.url = "github:mrshmllow/affinity-nix";
+    iamb = {
+      url = "github:VAWVAW/iamb/commit/614ccc9adf22ff493861a38769e5dd63dab5d8cd";
+    };
   };
 
   outputs =
@@ -40,6 +43,7 @@
       # mnw,
       home-manager,
       affinity-nix,
+      iamb,
       # quickshell,
       # qml-niri,
       ...
@@ -69,9 +73,10 @@
           extraSpecialArgs = { inherit inputs; };
           modules = [
             ({ pkgs, ... }: {
-              nixpkgs.overlays = [ affinity-nix.overlays.default ];
+              nixpkgs.overlays = [ iamb.overlays.default ];
+              # nixpkgs.overlays = [ affinity-nix.overlays.default ];
 
-              home.packages = [ pkgs.affinity-v3 ];
+              home.packages = [ pkgs.iamb ];
             })
             ./home-manager/home.nix
             # mnw.homeManagerModules.mnw

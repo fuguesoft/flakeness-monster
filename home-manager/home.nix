@@ -112,7 +112,22 @@ in
     hyfetch
 
     # I
-    # iamb # crazy compilation time (broken)
+    # iamb
+    # override to VAWVAW fork attempt
+    # (iamb.overrideAttrs (finalAttrs: {
+    #   version = "614ccc9adf22ff493861a38769e5dd63dab5d8cd";
+    #   src = fetchFromGitHub {
+    #     owner = "VAWVAW";
+    #     repo = "iamb";
+    #     rev = "${finalAttrs.version}";
+    #     hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    #   };
+    #   cargoDeps = finalAttrs.cargoDeps.overrideAttrs (
+    #     lib.const {
+    #       outputHash = "";
+    #     }
+    #   );
+    # }))
     inetutils
     inkscape
     # inputs.yt-x.packages."${system}".default
@@ -138,7 +153,7 @@ in
     # lutris - requires steam
 
     # M
-    magic-wormhole
+    magic-wormhole # goated frfr
     man
     man-pages
     mandown

@@ -33,7 +33,15 @@
   hardware = {
     bluetooth = {
       enable = true;
-      powerOnBoot = false;
+      powerOnBoot = true;
+      settings = {
+        General = {
+          Privacy = "device";
+          JustWorksRepairing = "always";
+          Class = "0x000100";
+          FastConnectable = "true";
+        };
+      };
     };
     graphics = {
       enable = true;
@@ -392,8 +400,11 @@
 
   ];
 
-  environment.wordlist.lists = {
-    WORDLIST = [ "${pkgs.scowl}/share/dict/words.txt" ];
+  environment.wordlist = {
+    enable = true;
+    lists = {
+      WORDLIST = [ "${pkgs.scowl}/share/dict/words.txt" ];
+    };
   };
 
   documentation = {
