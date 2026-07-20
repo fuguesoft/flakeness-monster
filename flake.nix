@@ -31,8 +31,9 @@
       flake = false;
     };
     # affinity-nix.url = "github:mrshmllow/affinity-nix";
-    iamb = {
-      url = "github:VAWVAW/iamb/commit/614ccc9adf22ff493861a38769e5dd63dab5d8cd";
+    iamb-vaw = {
+      url = "github:VAWVAW/iamb?rev=614ccc9adf22ff493861a38769e5dd63dab5d8cd";
+      flake = false;
     };
   };
 
@@ -42,8 +43,8 @@
       nixpkgs,
       # mnw,
       home-manager,
-      affinity-nix,
-      iamb,
+      # affinity-nix,
+      iamb-vaw,
       # quickshell,
       # qml-niri,
       ...
@@ -73,10 +74,10 @@
           extraSpecialArgs = { inherit inputs; };
           modules = [
             ({ pkgs, ... }: {
-              nixpkgs.overlays = [ iamb.overlays.default ];
+              # nixpkgs.overlays = [ iamb.overlays.default ];
               # nixpkgs.overlays = [ affinity-nix.overlays.default ];
 
-              home.packages = [ pkgs.iamb ];
+              # home.packages = [ pkgs.iamb ];
             })
             ./home-manager/home.nix
             # mnw.homeManagerModules.mnw

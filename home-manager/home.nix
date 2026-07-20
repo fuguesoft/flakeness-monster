@@ -112,22 +112,33 @@ in
     hyfetch
 
     # I
-    # iamb
     # override to VAWVAW fork attempt
-    # (iamb.overrideAttrs (finalAttrs: {
-    #   version = "614ccc9adf22ff493861a38769e5dd63dab5d8cd";
-    #   src = fetchFromGitHub {
-    #     owner = "VAWVAW";
-    #     repo = "iamb";
-    #     rev = "${finalAttrs.version}";
-    #     hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
-    #   };
-    #   cargoDeps = finalAttrs.cargoDeps.overrideAttrs (
-    #     lib.const {
-    #       outputHash = "";
-    #     }
-    #   );
-    # }))
+    # I'd like to do this without IFD
+    # (iamb.overrideAttrs (
+    #   finalAttrs: prev: {
+    #     version = "614ccc9adf22ff493861a38769e5dd63dab5d8cd";
+    #     src = fetchFromGitHub {
+    #       owner = "VAWVAW";
+    #       repo = "iamb";
+    #       rev = "${finalAttrs.version}";
+    #       hash = "sha256-Js7dPV0VEV/myMoS/Cgk+GB2XTe6MpvjQ6XZVa4Uqyo=";
+    #     };
+    #
+    #     cargoDeps = pkgs.rustPlatform.importCargoLock {
+    #       lockFile = finalAttrs.src + "/Cargo.lock";
+    #       allowBuiltinFetchGit = true;
+    #     };
+    #
+    #     cargoHash = null;
+    #
+    #     # cargoDeps = prev.cargoDeps.overrideAttrs {
+    #     #   name = iamb;
+    #     #   inherit (finalAttrs) src;
+    #     #   outputHash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    #     # };
+    #
+    #   }
+    # ))
     inetutils
     inkscape
     # inputs.yt-x.packages."${system}".default
@@ -162,7 +173,7 @@ in
     manix
     # mdbook-man
     # milkytracker
-    mpv
+    # mpv
     musescore
 
     # N
@@ -385,6 +396,7 @@ in
     ./git.nix
     ./gtk.nix
     ./neovim.nix
+    ./mpv.nix
     ./obs.nix
     ./ssh.nix
     ./styling.nix
