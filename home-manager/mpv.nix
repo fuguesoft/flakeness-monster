@@ -4,7 +4,7 @@
     enable = true;
     scripts = with pkgs.mpvScripts; [
       mpris
-      # crop
+      # mpvacious
       videoclip
       uosc # we like this
     ];
@@ -17,23 +17,23 @@
       "p" = "nonscalable script-binding uosc/paste";
       "tab" = "script-binding uosc/toggle-ui";
       "space" = "cycle pause; script-binding uosc/ecide-pause-indicator";
-      "/" = "nonscalable script-binding uosc/menu_type_to_search";
-      "o" = "script-message-to uosc flash-elementsimeline,progress,top_bar,controls";
+      "/" = "script-message-to uosc menu_type_to_search";
+      # "/" = "nonscalable script-binding uosc/menu_type_to_search";
+      "o" = "script-message-to uosc flash-elements timeline,progress,top_bar,controls";
       "g-x" = "nonscalable script-binding uosc/shuffle";
-      # "o" = "nonscalable script-message-to uosc flash-elements progress,top_bar";
 
       # menus
-      "Ctrl+n" = "nonscalable script-binding uosc/menu-next";
-      "Ctrl+p" = "nonscalable script-binding uosc/menu-prev";
-      "ctrl+j" = "nonscalable script-binding uosc/meny-end";
+      "ctrl+n" = "nonscalable script-binding uosc/menu-next";
+      "ctrl+p" = "nonscalable script-binding uosc/menu-prev";
+      "ctrl+j" = "nonscalable script-binding uosc/menu-end";
       "ctrl+k" = "nonscalable script-binding uosc/menu-start";
+      "ctrl+l" = "nonscalable cycle-values loop-playlist inf no";
       "g-K" = "nonscalable script-binding uosc/menu-end";
       "g-a" = "nonscalable script-binding uosc/audio";
       "g-c" = "nonscalable script-binding uosc/chapters";
       "g-d" = "nonscalable script-binding uosc/download-subtitles";
       "g-e" = "nonscalable script-binding uosc/editions";
       "g-k" = "nonscalable script-binding uosc/keybinds";
-      "g-l" = "nonscalable set loop-playlist inf";
       "g-m" = "nonscalable script-binding uosc/menu";
       "g-o" = "nonscalable script-binding uosc/open-file";
       "g-p" = "nonscalable script-binding uosc/playlist";
@@ -49,14 +49,39 @@
     scriptOpts = {
       uosc = {
         pause_indicator = "manual";
-        # "loop-playlist" = true;
+      };
+      console = {
+        font_size = 16;
+        scale_with_window = "no";
       };
     };
 
-    # waylandSupport = true;
-    # mpv = pkgs.mpv.override {
-    #   waylandSupport = true;
-    # };
-    # config = {};
+    config = {
+      # General QoL improvements
+      hwdec = "auto";
+      vo = "gpu";
+      slang = "en,eng,enUS,en-US";
+      sub-auto = "fuzzy";
+
+      osd-scale-by-window = "";
+
+      # what's this?
+      sid = 1;
+
+      # Pass cookies to yt-dlp inside mpv
+      ytdl-raw-options = "cookies-from-browser=firefox";
+
+      # Force highest quality 1080p video + best audio
+      ytdl-format = "bestvideo[vcodec^=avc1][height<=1080]+bestaudio/best";
+
+    };
+    profiles = {
+      console-subs = {
+        profile-desc = "move subs to top when console is open";
+        profile-cond = "p['user-data/mpv/console/open']";
+        profile-restore = "copy";
+        sub-align-y = "top";
+      };
+    };
   };
 }
