@@ -7,6 +7,7 @@
       # mpvacious
       videoclip
       uosc # we like this
+      # inputs.mpv-youtube-search.packages.${pkgs.stdenv.hostPlatform.system}.mpv-youtube-search
     ];
     # syntax
     # [Shift+][Ctrl+][Alt+][Meta+]<key> [{<section>}] <command> ( ; <command> )*
@@ -23,8 +24,8 @@
       "g-x" = "nonscalable script-binding uosc/shuffle";
 
       # menus
-      "ctrl+n" = "nonscalable script-binding uosc/menu-next";
-      "ctrl+p" = "nonscalable script-binding uosc/menu-prev";
+      "ctrl+n" = "nonscalable repeatable script-message-to uosc menu-next";
+      "ctrl+p" = "nonscalable repeatable script-message-to uosc menu-prev";
       "ctrl+j" = "nonscalable script-binding uosc/menu-end";
       "ctrl+k" = "nonscalable script-binding uosc/menu-start";
       "ctrl+l" = "nonscalable cycle-values loop-playlist inf no";
@@ -63,7 +64,8 @@
       slang = "en,eng,enUS,en-US";
       sub-auto = "fuzzy";
 
-      osd-scale-by-window = "";
+      # osd-scale-by-window = "";
+      # native-keyrepeat = "yes";
 
       # what's this?
       sid = 1;
