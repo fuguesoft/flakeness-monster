@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   programs.mpv = {
     enable = true;
@@ -17,11 +17,16 @@
       "y" = "nonscalable script-binding uosc/copy-to-clipboard";
       "p" = "nonscalable script-binding uosc/paste";
       "tab" = "script-binding uosc/toggle-ui";
-      "space" = "cycle pause; script-binding uosc/ecide-pause-indicator";
+      "space" = "cycle pause; script-binding uosc/decide-pause-indicator";
       "/" = "script-message-to uosc menu_type_to_search";
       # "/" = "nonscalable script-binding uosc/menu_type_to_search";
       "o" = "script-message-to uosc flash-elements timeline,progress,top_bar,controls";
+      "ø" = "script-message-to uosc toggle-elements top_bar";
+      "alt+o" = "script-message-to uosc flash-elements top_bar";
+      "O" = "script-message-to uosc toggle-elements timeline,progress,top_bar,controls";
       "g-x" = "nonscalable script-binding uosc/shuffle";
+      "ctrl+y" = "nonscalable script-binding uosc_yt_search/open-menu";
+      # "ctrl+y" = "nonscalable script-message-to uosc menu-next";
 
       # menus
       "ctrl+n" = "nonscalable repeatable script-message-to uosc menu-next";
@@ -50,6 +55,11 @@
     scriptOpts = {
       uosc = {
         pause_indicator = "manual";
+        # top_bar = "no-border";
+        top_bar = "always";
+        top_bar_size = 40;
+        top_bar_title = "yes";
+        # top_bar_title=''${?pause==yes:⏸}${?mute==yes:🔇}${?ontop==yes:📌}${user-data/format-filename}'';
       };
       console = {
         font_size = 16;

@@ -35,9 +35,9 @@
       url = "github:VAWVAW/iamb?rev=614ccc9adf22ff493861a38769e5dd63dab5d8cd";
       flake = false;
     };
-    mpv-youtube-search = {
-      url = "github:willswats/mpv-youtube-search";
-    };
+    # mpv-youtube-search = {
+    #   url = "github:willswats/mpv-youtube-search";
+    # };
   };
 
   outputs =
@@ -76,18 +76,9 @@
           inherit pkgs;
           extraSpecialArgs = { inherit inputs; };
           modules = [
-            ({ pkgs, ... }: {
-              # nixpkgs.overlays = [ iamb.overlays.default ];
-              # nixpkgs.overlays = [ affinity-nix.overlays.default ];
-
-              # home.packages = [ pkgs.iamb ];
-            })
             ./home-manager/home.nix
             # mnw.homeManagerModules.mnw
           ];
-
-          # Optionally use extraSpecialArgs
-          # to pass through arguments to home.nix
         };
       };
     };

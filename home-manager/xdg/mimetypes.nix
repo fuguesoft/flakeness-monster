@@ -123,6 +123,7 @@
       "video/x-theora" = [ "mpv.desktop" ];
       "video/x-theora+ogg" = [ "mpv.desktop" ];
     };
+
     defaultApplications = {
       "application/json" = [ "nvim.desktop" ];
       "application/pdf" = [ "sioyek.desktop" ];
