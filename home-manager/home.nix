@@ -262,6 +262,7 @@ in
     tukai
     #typing - choose one
     ttyper
+    twitch-tui
     typespeed
     typioca
 
@@ -304,6 +305,7 @@ in
     wine-wayland
     winetricks
     wiremix
+    wtwitch
 
     # X
     xdg-ninja

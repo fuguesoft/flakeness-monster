@@ -391,7 +391,7 @@
 
     # X
     # xdg-desktop-portal-termfilechooser
-    # xurls
+    xurls
     xwayland-satellite
 
     # Y
