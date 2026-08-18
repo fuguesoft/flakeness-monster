@@ -95,6 +95,7 @@ in
     forgejo-cli
     # fluffychat
     freecad
+    freetube
     # fugue-kabmat
     furnace
 
@@ -161,7 +162,7 @@ in
     lexy
     lilypond
     # lilgptracker
-    localsend
+    # localsend
     lue
     # lutris - requires steam
 

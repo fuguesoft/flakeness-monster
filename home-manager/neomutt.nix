@@ -1,4 +1,7 @@
-{ }:
+{ ... }:
 {
+  programs.neomutt = {
+    enable = true;
+  };
 
 }

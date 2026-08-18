@@ -64,17 +64,8 @@
     #   mimeType = [ "image/*" ];
     # };
   };
+
   # MIMETYPES
-
-  # xdg.mimeApps.defaultApplications = {
-  #   "text/plain" = ["neovide.desktop"];
-  #   "application/pdf" = ["sioyek.desktop"];
-  #   "image/*" = ["neovide.desktop"];
-  #   "video/png" = ["mpv.desktop"];
-  #   "video/jpg" = ["mpv.desktop"];
-  #   "video/*" = ["mpv.desktop"];
-  # };
-
   imports = [
     ./mimetypes.nix
   ];

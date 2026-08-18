@@ -5,7 +5,10 @@
     settings = {
       buffer = {
         images = false;
-        mark-links = true;
+        # mark-links = false;
+        user-style = ''
+          *, *::before, *::after { color: revert !important; background-color: revert !important }
+        '';
       };
       external = {
         download-dir = "$HOME/descargas/chawan/";
@@ -28,8 +31,23 @@
         q = "";
         p = "gotoClipboardURL";
         i = "peek";
+        o = "peek";
+        # "Tab" = "buffer.cursorNextLink";
+        # "S-Tab" = "buffer.cursorPrevLink";
         # O = "";
       };
+      line = {
+        # "M-" = "line.cancel";
+        # "C-[" = "line.cancel";
+        "M-e" = "line.openEditor";
+        Esc = "line.cancel";
+      };
+      # "siteconf.*" = {
+      #   # url = {"*"};
+      #   user-style = ''
+      #     *, *::before, *::after { color: revert !important; background-color: revert !important }
+      #   '';
+      # };
 
     };
   };
