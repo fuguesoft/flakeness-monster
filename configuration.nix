@@ -303,6 +303,7 @@
     irssi
 
     # J
+    jq
 
     # K
     killall
@@ -459,14 +460,14 @@
       "https://nix-community.cachix.org"
 
       # Affinity on Linux
-      "https://cache.garnix.io"
+      # "https://cache.garnix.io"
     ];
     trusted-public-keys = [
       # "graphite.cachix.org-1:B7Il1yMpkquN/dXM+5GRmz+4Xmu2aaCS1GcWNfFhsOo="
       "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
 
       # Affinity on Linux
-      "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g="
+      # "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g="
     ];
 
     experimental-features = [

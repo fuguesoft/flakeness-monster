@@ -148,11 +148,11 @@ in
     isort
 
     # J
-    jmtpfs
+    # jmtpfs
 
     # K
     # inputs.kabmat
-    kanban
+    # kanban (sloppy)
     kdePackages.kdenlive
     kjv
 
@@ -259,7 +259,7 @@ in
     tor
     tran
     trash-cli
-    tuir
+    # tuir
     tukai
     #typing - choose one
     ttyper
@@ -318,7 +318,9 @@ in
     yewtube
     youtube-tui
     ytfzf
-    yt-dlp
+    # (yt-dlp.override {
+    #   version = "yt-dlp nightly 2026.08.17.073947";
+    # })
     ytdl-sub
 
     # Z
@@ -426,6 +428,21 @@ in
   #   enable = true;
   #   enableTelevisionIntegration = true;
   # };
+
+  programs.yt-dlp = {
+    enable = true;
+    package = pkgs.yt-dlp.overrideAttrs (
+      final: prev: {
+        version = "yt-dlp-nightly-2026.08.17.073947";
+        src = pkgs.fetchFromGitHub {
+          owner = "yt-dlp";
+          repo = "yt-dlp";
+          rev = "f1896c57f5ba4b92741bb509790837d6838ec99e";
+          hash = "sha256-suCz+O7d6DT4ocU/et4gOfhePNaD8mrGEpbfKEOrjr4=";
+        };
+      }
+    );
+  };
 
   home.pointerCursor = {
     # name = "Vanilla-DMZ";
