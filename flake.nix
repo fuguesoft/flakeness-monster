@@ -35,6 +35,10 @@
       url = "github:VAWVAW/iamb?rev=614ccc9adf22ff493861a38769e5dd63dab5d8cd";
       flake = false;
     };
+    canban = {
+      url = "path:/home/fugue/dev/nix/packaging/canban/";
+      # flake = false;
+    };
     # mpv-youtube-search = {
     #   url = "github:willswats/mpv-youtube-search";
     # };

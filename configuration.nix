@@ -277,6 +277,7 @@
     # C
     chafa
     # inputs.concord.packages.${system}.default
+    # inputs.canban."${pkgs.stdenv.hostPlatform.system}".default
 
     # D
 

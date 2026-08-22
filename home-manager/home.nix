@@ -69,6 +69,7 @@ in
     # C
     # cinny-desktop
     calcurse
+    inputs.canban.packages."${pkgs.stdenv.hostPlatform.system}".default
     cmatrix
     # codeberg-cli # archived
     # concord-discord # needs packaging
@@ -101,6 +102,7 @@ in
 
     # G
     gh
+    ghgrab
     godot
     goldendict-ng
     graphite
