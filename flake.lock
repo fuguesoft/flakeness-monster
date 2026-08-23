@@ -5,14 +5,18 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1787343059,
-        "narHash": "sha256-K+VWKYOlLtWG/ApOlWDzzoRFS460i8HwrQ3ZD16cY/Y=",
-        "path": "/home/fugue/dev/nix/packaging/canban/",
-        "type": "path"
+        "lastModified": 1787404662,
+        "narHash": "sha256-OSMjmFrmfbsbePwQF7ZLrPl6/Ph9ISMatJJMRAYQivY=",
+        "owner": "fuguesoft",
+        "repo": "canban",
+        "rev": "d6110bdeb9038e28424b109311bb7ff44d362157",
+        "type": "github"
       },
       "original": {
-        "path": "/home/fugue/dev/nix/packaging/canban/",
-        "type": "path"
+        "owner": "fuguesoft",
+        "ref": "feat/nix-compat",
+        "repo": "canban",
+        "type": "github"
       }
     },
     "concord": {

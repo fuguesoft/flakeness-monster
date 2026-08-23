@@ -36,9 +36,11 @@
       flake = false;
     };
     canban = {
-      url = "path:/home/fugue/dev/nix/packaging/canban/";
-      # flake = false;
+      url = "github:fuguesoft/canban/feat/nix-compat";
     };
+    # kanban-tui = {
+    #   url = "path:///home/fugue/dev/nix/kanban-tui/";
+    # };
     # mpv-youtube-search = {
     #   url = "github:willswats/mpv-youtube-search";
     # };

@@ -65,6 +65,7 @@ in
     bulletty
     # package to watch/package?
     # https://codeberg.org/janantos/brow6el
+    # inputs.kanban-tui.packages."${pkgs.stdenv.hostPlatform.system}".default
 
     # C
     # cinny-desktop
