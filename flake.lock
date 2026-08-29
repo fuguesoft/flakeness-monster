@@ -130,20 +130,18 @@
       }
     },
     "iamb-vaw": {
-      "flake": false,
+      "inputs": {
+        "nixpkgs": "nixpkgs_3"
+      },
       "locked": {
-        "lastModified": 1784329200,
-        "narHash": "sha256-Js7dPV0VEV/myMoS/Cgk+GB2XTe6MpvjQ6XZVa4Uqyo=",
-        "owner": "VAWVAW",
-        "repo": "iamb",
-        "rev": "614ccc9adf22ff493861a38769e5dd63dab5d8cd",
-        "type": "github"
+        "lastModified": 1788013095,
+        "narHash": "sha256-J4nYcira9dEozTpPsvFiGAzSLrAdbCp7rtwaCzi77L8=",
+        "path": "/home/fugue/dev/nix/packaging/iamb",
+        "type": "path"
       },
       "original": {
-        "owner": "VAWVAW",
-        "repo": "iamb",
-        "rev": "614ccc9adf22ff493861a38769e5dd63dab5d8cd",
-        "type": "github"
+        "path": "/home/fugue/dev/nix/packaging/iamb",
+        "type": "path"
       }
     },
     "kabmat": {
@@ -211,6 +209,22 @@
     },
     "nixpkgs_3": {
       "locked": {
+        "lastModified": 1787498568,
+        "narHash": "sha256-9i/VTdusq/+NM/tz+J1Re+ojkMB8MBf0QshnYfzHz30=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "56c02bc00adcf003215cc4bd996d6efaf4cff188",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_4": {
+      "locked": {
         "lastModified": 1786862985,
         "narHash": "sha256-FBJRXmbGXiSUDvYEbfLYRkckayyZ6SK1UEqhCrIZ2Cs=",
         "owner": "NixOS",
@@ -225,7 +239,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_4": {
+    "nixpkgs_5": {
       "locked": {
         "lastModified": 1761236834,
         "narHash": "sha256-+pthv6hrL5VLW2UqPdISGuLiUZ6SnAXdd2DdUE+fV2Q=",
@@ -294,7 +308,7 @@
         "home-manager": "home-manager",
         "iamb-vaw": "iamb-vaw",
         "kabmat": "kabmat",
-        "nixpkgs": "nixpkgs_3",
+        "nixpkgs": "nixpkgs_4",
         "qml-niri": "qml-niri",
         "quickshell": "quickshell",
         "yt-x": "yt-x"
@@ -353,7 +367,7 @@
     },
     "treefmt-nix": {
       "inputs": {
-        "nixpkgs": "nixpkgs_4"
+        "nixpkgs": "nixpkgs_5"
       },
       "locked": {
         "lastModified": 1762410071,

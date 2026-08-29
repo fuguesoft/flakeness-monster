@@ -32,8 +32,8 @@
     };
     # affinity-nix.url = "github:mrshmllow/affinity-nix";
     iamb-vaw = {
-      url = "github:VAWVAW/iamb?rev=614ccc9adf22ff493861a38769e5dd63dab5d8cd";
-      flake = false;
+      url = "path:/home/fugue/dev/nix/packaging/iamb";
+      # flake = false;
     };
     canban = {
       url = "github:fuguesoft/canban/feat/nix-compat";
@@ -53,7 +53,7 @@
       # mnw,
       home-manager,
       # affinity-nix,
-      iamb-vaw,
+      # iamb-vaw,
       # quickshell,
       # qml-niri,
       ...

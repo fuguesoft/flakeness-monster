@@ -117,7 +117,8 @@ in
     hyfetch
 
     # I
-    inputs.iamb-vaw.packages."${pkgs.stdenv.hostPlatform.system}".iamb
+    # inputs.canban.packages."${pkgs.stdenv.hostPlatform.system}".default
+    inputs.iamb-vaw.packages."${pkgs.stdenv.hostPlatform.system}".default
     # override to VAWVAW fork attempt
     # I'd like to do this without IFD
     # (iamb.overrideAttrs (
