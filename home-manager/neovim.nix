@@ -50,6 +50,7 @@
       prettierd
       pylint
       pyright
+      rust-analyzer
       stylua
       tree-sitter
       typescript-language-server

@@ -117,7 +117,7 @@ in
     hyfetch
 
     # I
-    # inputs.iamb-vaw.${pkgs.stdenv.hostPlatform.system}.iamb
+    inputs.iamb-vaw.packages."${pkgs.stdenv.hostPlatform.system}".iamb
     # override to VAWVAW fork attempt
     # I'd like to do this without IFD
     # (iamb.overrideAttrs (
@@ -166,7 +166,7 @@ in
     lilypond
     # lilgptracker
     # localsend
-    lue
+    # lue # lacking images and codeblocks
     # lutris - requires steam
 
     # M
@@ -260,11 +260,10 @@ in
     tintin
     toilet
     tor
-    tran
     trash-cli
     # tuir
-    tukai
     #typing - choose one
+    tukai
     ttyper
     twitch-tui
     typespeed
