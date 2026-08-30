@@ -263,11 +263,8 @@ in
     tor
     trash-cli
     # tuir
-    #typing - choose one
-    tukai
     ttyper
     twitch-tui
-    typespeed
     typioca
 
     # U
