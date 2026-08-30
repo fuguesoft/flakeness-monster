@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  service.swayidle = {
+  services.swayidle = {
     enable = true;
     timeouts = [
       {
