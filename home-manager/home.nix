@@ -74,6 +74,7 @@ in
     cmatrix
     # codeberg-cli # archived
     # concord-discord # needs packaging
+    inputs.concord.packages."${pkgs.stdenv.hostPlatform.system}".default
     cpufetch
 
     # D
