@@ -1,15 +1,11 @@
 {
   config,
   pkgs,
-  lib,
-  inputs,
-  # system,
   ...
 }:
 
 let
-  fugue-kabmat = (import inputs.kabmat { inherit pkgs; }).kabmat;
-  dots = "$XDG_CONFIG_HOME/nixos/current/";
+  dots = "${config.xdg.configHome}/nixos/current/nixdots";
   create_symlink = path: config.lib.file.mkOutOfStoreSymlink path;
   configs = {
     nvim = "nvim";
@@ -22,13 +18,25 @@ in
   home.stateVersion = "25.11";
 
   # Let Home Manager install and manage itself.
-  # programs.home-manager.enable = true;
+  programs.home-manager.enable = true;
 
   home.preferXdgDirectories = true;
+
+  # programs.fish = {
+  #   enable = true;
+  # };
+
+  # This was working in the opposite way you expected
+  # you want .config <- nix-store and not the other way around
+  # xdg.configFile = builtins.mapAttrs (name: subpath: {
+  #   source = create_symlink "${dots}/${subpath}";
+  #   recursive = true;
+  # }) configs;
 
   # modules
   imports = [
     ./browsers
+    ./fish.nix
     ./fuzzel.nix
     ./git.nix
     ./gtk.nix
@@ -42,10 +50,6 @@ in
     ./xdg
     # ./znc.nix
   ];
-
-  programs.fish = {
-    enable = true;
-  };
 
   programs.direnv = {
     enable = true;
