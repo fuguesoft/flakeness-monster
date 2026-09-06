@@ -16,7 +16,7 @@
 
   # This is some tony-btw junk that just straight up does not work
   # xdg.configFile."fish" = {
-  #   source = config.lib.file.mkOutOfStoreSymlink "${config.xdg.configHome}/fish";
+  #   source = config.lib.file.mkOutOfStoreSymlink "${config.xdg.configHome}/fish/config.fish";
   #   recursive = true;
   # };
 }
