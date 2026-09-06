@@ -309,6 +309,7 @@
     # K
     killall
     kjv
+    kmonad
     # KDE Utilities
     # kdePackages.discover # Optional: Software center for Flatpaks/firmware updates
     # kdePackages.kcalc # Calculator

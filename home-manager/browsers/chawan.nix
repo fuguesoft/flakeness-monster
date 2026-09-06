@@ -25,6 +25,7 @@
       page = {
         S = "() => pager.load('ddg: ')";
         t = "() => pager.load('')";
+        gm = "() => pager.load('man:')";
         T = "() => pager.dupeBuffer()";
         Q = "() => quit()";
         "C-q" = "() => quit()";

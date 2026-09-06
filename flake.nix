@@ -20,7 +20,8 @@
       inputs.quickshell.follows = "quickshell";
     };
     concord = {
-      url = "github:chojs23/concord";
+      # url = "github:chojs23/concord/f6f783aa257840addcb8b2d10e7fea597f310a48";
+      url = "github:chojs23/concord/";
     };
     yt-x = {
       url = "github:Benexl/yt-x";
@@ -73,6 +74,7 @@
           modules = [
             ./configuration.nix
             ./desktop
+            ./keyboard
           ];
         };
         # another hostname
