@@ -33,7 +33,8 @@
     };
     # affinity-nix.url = "github:mrshmllow/affinity-nix";
     iamb-vaw = {
-      url = "path:/home/fugue/dev/nix/packaging/iamb";
+      url = "github:VAWVAW/iamb";
+      # url = "path:/home/fugue/dev/nix/packaging/iamb";
       # flake = false;
     };
     canban = {

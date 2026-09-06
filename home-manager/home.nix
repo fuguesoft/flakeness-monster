@@ -22,10 +22,6 @@ in
 
   home.preferXdgDirectories = true;
 
-  # programs.fish = {
-  #   enable = true;
-  # };
-
   # This was working in the opposite way you expected
   # you want .config <- nix-store and not the other way around
   # xdg.configFile = builtins.mapAttrs (name: subpath: {
