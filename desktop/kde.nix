@@ -1,5 +1,15 @@
-{ pkgs, config, lib, ... }:
 {
+  pkgs,
+  config,
+  lib,
+  ...
+}:
+{
+
+  services = {
+    desktopManager.plasma6.enable = false;
+  };
+
   environment.plasma6.excludePackages = with pkgs; [
     kdePackages.elisa # Music player
     kdePackages.kdepim-runtime # Akonadi agents
@@ -10,4 +20,5 @@
     kdePackages.ksudoku
     kdePackages.ktorrent
   ];
+
 }
