@@ -9,6 +9,7 @@
       xdg-desktop-portal-termfilechooser
       xdg-desktop-portal-wlr
       xdg-desktop-portal-gnome
+      xdg-desktop-portal-gtk
     ];
 
     config = {
@@ -20,13 +21,14 @@
       };
       niri = {
         default = [
-          # "gtk"
+          "gtk4"
           # "gnome"
         ];
         "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
         "org.freedesktop.impl.portal.ScreenCast" = "gnome";
         "org.freedesktop.impl.portal.Screenshot" = "gnome";
         "org.freedesktop.impl.portal.RemoteDesktop" = "gnome";
+        "org.freedesktop.impl.portal.AppChooser" = "gtk4";
       };
     };
   };

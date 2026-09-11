@@ -204,6 +204,7 @@
       "audio/x-xm" = [ "mpv.desktop" ];
       "image/gif" = [ "mvi.desktop" ];
       "image/jpeg" = [ "mvi.desktop" ];
+      "image/jpg" = [ "mvi.desktop" ];
       "image/png" = [ "mvi.desktop" ];
       "image/webp" = [ "mvi.desktop" ];
       "text/css" = [ "nvim.desktop" ];

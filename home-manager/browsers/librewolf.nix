@@ -167,13 +167,13 @@
             "Name" = "nixpkgs";
             "URLTemplate" =
               "https://search.nixos.org/packages?include_modular_service_options=1&include_nixos_options=1&query={searchTerms}";
-            "Alias" = "@np";
+            "Alias" = "@nxp";
           }
           {
             "Name" = "nixoptions";
             "URLTemplate" =
               "https://search.nixos.org/options?include_modular_service_options=1&include_nixos_options=1&query={searhTerms}";
-            "Alias" = "@no";
+            "Alias" = "@nxo";
           }
           {
             "Name" = "nixwiki";
@@ -193,7 +193,7 @@
           {
             "Name" = "my nixos";
             "URLTemplate" = "https://mynixos.com/search?q={searchTerms}";
-            "Alias" = "@nx";
+            "Alias" = "@mnx";
           }
         ];
         "Default" = "ddgno";
@@ -234,7 +234,6 @@
       # "webgl.disabled" = false;
     };
 
-    # - [.] vifm-filechooser (WIP)
     # - [.] tridactyl settings?
     # - [X] remmebered sites
   };

@@ -106,51 +106,51 @@
 
   # new section
   # don't forget to delete `rec` at the top
-  environment.sessionVariables = rec {
-    EDITOR = "nvim";
-    VISUAL = "nvim";
-
-    LESS = "-R";
-    MANPAGER = "less +Gg -M -R -I --use-color -Dd+r -Du+b";
-
-    XDG_CACHE_HOME = "$HOME/.cache";
-    GNUPGHOME = "${XDG_DATA_HOME}\/gnupg";
-
-    XDG_CONFIG_HOME = "$HOME/.config";
-    XDG_BIN_HOME = "$HOME/.local/bin";
-    XDG_DATA_HOME = "$HOME/.local/share";
-    XDG_DESKTOP_DIR = "$HOME/escritorio";
-    XDG_DOCUMENTS_DIR = "$HOME/documentos";
-    XDG_DOWNLOAD_DIR = "$HOME/descargas";
-    XDG_MUSIC_DIR = "$HOME/música";
-    XDG_PICTURES_DIR = "$HOME/imágenes";
-    XDG_PUBLICSHARE_DIR = "$HOME/público";
-    XDG_STATE_HOME = "$HOME\/.local/state";
-    XDG_TEMPLATES_DIR = "$HOME/plantillas";
-    XDG_VIDEOS_DIR = "$HOME/vídeos";
-
-    # What's the syntax here for defining this?
-    # Use `rec`
-    HISTFILE = "${XDG_STATE_HOME}\/bash/history";
-    NIRIDOC = "${pkgs.niri.doc}/share/doc/niri/wiki";
-    # getDoc is darwin only
-    # NIRIDOC = "${pkgs.lib.getDoc pkgs.niri}/share/doc/niri/wiki";
-    PASSWORD_STORE_DIR = "${XDG_DATA_HOME}\/pass";
-    PATH = [
-      "${XDG_BIN_HOME}"
-    ];
-    # qml-niri (absolute nonsense, don't do this)
-    # system = pkgs.stdenv.hostPlatform.system;
-    # QT_PLUGIN_PATH = [
-    #   inputs.qml-niri.packages.${system}.default
-    # ];
-    PARALLEL_HOME = "${XDG_CONFIG_HOME}/parallel";
-    PYTHON_HISTORY = "${XDG_STATE_HOME}\/python_history";
-    SUDO_ASKPASS = "${XDG_BIN_HOME}\/_askpass.sh";
-    W3M_DIR = "${XDG_DATA_HOME}\/w3m";
-    WINEPREFIX = "${XDG_DATA_HOME}/wine";
-    XCOMPOSECACHE = "${XDG_CACHE_HOME}\/X11/xcompose";
-  };
+  # environment.sessionVariables = rec {
+  #   EDITOR = "nvim";
+  #   VISUAL = "nvim";
+  #
+  #   LESS = "-R";
+  #   MANPAGER = "less +Gg -M -R -I --use-color -Dd+r -Du+b";
+  #
+  #   XDG_CACHE_HOME = "$HOME/.cache";
+  #   GNUPGHOME = "${XDG_DATA_HOME}\/gnupg";
+  #
+  #   XDG_CONFIG_HOME = "$HOME/.config";
+  #   XDG_BIN_HOME = "$HOME/.local/bin";
+  #   XDG_DATA_HOME = "$HOME/.local/share";
+  #   XDG_DESKTOP_DIR = "$HOME/escritorio";
+  #   XDG_DOCUMENTS_DIR = "$HOME/documentos";
+  #   XDG_DOWNLOAD_DIR = "$HOME/descargas";
+  #   XDG_MUSIC_DIR = "$HOME/música";
+  #   XDG_PICTURES_DIR = "$HOME/imágenes";
+  #   XDG_PUBLICSHARE_DIR = "$HOME/público";
+  #   XDG_STATE_HOME = "$HOME\/.local/state";
+  #   XDG_TEMPLATES_DIR = "$HOME/plantillas";
+  #   XDG_VIDEOS_DIR = "$HOME/vídeos";
+  #
+  #   # What's the syntax here for defining this?
+  #   # Use `rec`
+  #   HISTFILE = "${XDG_STATE_HOME}\/bash/history";
+  #   NIRIDOC = "${pkgs.niri.doc}/share/doc/niri/wiki";
+  #   # getDoc is darwin only
+  #   # NIRIDOC = "${pkgs.lib.getDoc pkgs.niri}/share/doc/niri/wiki";
+  #   PASSWORD_STORE_DIR = "${XDG_DATA_HOME}\/pass";
+  #   PATH = [
+  #     "${XDG_BIN_HOME}"
+  #   ];
+  #   # qml-niri (absolute nonsense, don't do this)
+  #   # system = pkgs.stdenv.hostPlatform.system;
+  #   # QT_PLUGIN_PATH = [
+  #   #   inputs.qml-niri.packages.${system}.default
+  #   # ];
+  #   PARALLEL_HOME = "${XDG_CONFIG_HOME}/parallel";
+  #   PYTHON_HISTORY = "${XDG_STATE_HOME}\/python_history";
+  #   SUDO_ASKPASS = "${XDG_BIN_HOME}\/_askpass.sh";
+  #   W3M_DIR = "${XDG_DATA_HOME}\/w3m";
+  #   WINEPREFIX = "${XDG_DATA_HOME}/wine";
+  #   XCOMPOSECACHE = "${XDG_CACHE_HOME}\/X11/xcompose";
+  # };
 
   programs.droidcam.enable = true;
 
@@ -168,14 +168,14 @@
     # };
   };
 
-  programs.mangowc = {
-    enable = true;
-    package = pkgs.mango;
-  };
+  # programs.mangowc = {
+  #   enable = true;
+  #   package = pkgs.mango;
+  # };
 
-  programs.niri = {
-    enable = true;
-  };
+  # programs.niri = {
+  #   enable = true;
+  # };
 
   # programs.ssh.startAgent = true;
 
@@ -198,27 +198,27 @@
     enable = true;
   };
 
-  # resolve conflict between keyd and libinput that interferes with dwt
-  environment.etc."libinput/local-overrides.quirks".text = pkgs.lib.mkForce ''
-    [Serial Keyboards]
-    MatchUdevType=keyboard
-    MatchName=keyd virtual keyboard
-    AttrKeyboardIntegration=internal
-  '';
+  # # resolve conflict between keyd and libinput that interferes with dwt
+  # environment.etc."libinput/local-overrides.quirks".text = pkgs.lib.mkForce ''
+  #   [Serial Keyboards]
+  #   MatchUdevType=keyboard
+  #   MatchName=keyd virtual keyboard
+  #   AttrKeyboardIntegration=internal
+  # '';
 
-  services.keyd = {
-    enable = true;
-    keyboards = {
-      default = {
-        ids = [ "*" ];
-        settings = {
-          main = {
-            capslock = "overload(control, esc)";
-          };
-        };
-      };
-    };
-  };
+  # services.keyd = {
+  #   enable = true;
+  #   keyboards = {
+  #     default = {
+  #       ids = [ "*" ];
+  #       settings = {
+  #         main = {
+  #           capslock = "overload(control, esc)";
+  #         };
+  #       };
+  #     };
+  #   };
+  # };
 
   services.passSecretService.enable = true;
 
@@ -229,12 +229,6 @@
     enable = true;
     pulse.enable = true;
   };
-
-  # services.uxplay.enable = true;
-
-  # services.weechat = {
-  #   enabled = true;
-  # };
 
   security.pam.services.fugue.gnupg = {
     enable = true;
@@ -262,153 +256,155 @@
       enable = true;
     };
   };
+
   programs.virt-manager.enable = true;
   programs.obs-studio.enableVirtualCamera = true;
+
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
-  environment.systemPackages = with pkgs; [
-    # A
-    # alacritty
+  # environment.systemPackages = with pkgs; [
+  #   # A
+  #   # alacritty
+  #
+  #   # B
+  #   brightnessctl
+  #   btop
+  #
+  #   # C
+  #   chafa
+  #   # inputs.concord.packages.${system}.default
+  #   # inputs.canban."${pkgs.stdenv.hostPlatform.system}".default
+  #
+  #   # D
+  #
+  #   # E
+  #   elinks
+  #
+  #   # F
+  #   fd
+  #   foot
+  #   fprintd
+  #
+  #   # G
+  #   git
+  #   gnumake
+  #   gphoto2
+  #   greetd
+  #
+  #   # H
+  #   home-manager
+  #
+  #   # I
+  #   ifuse
+  #   inxi
+  #   irssi
+  #
+  #   # J
+  #   jq
+  #
+  #   # K
+  #   killall
+  #   kjv
+  #   kmonad
+  #   # KDE Utilities
+  #   # kdePackages.discover # Optional: Software center for Flatpaks/firmware updates
+  #   # kdePackages.kcalc # Calculator
+  #   # kdePackages.kcharselect # Character map
+  #   # kdePackages.kclock # Clock app
+  #   # kdePackages.kcolorchooser # Color picker
+  #   # kdePackages.kolourpaint # Simple paint program
+  #   # kdePackages.ksystemlog # System log viewer
+  #   # kdePackages.sddm-kcm # SDDM configuration module
+  #   # kdiff3 # File/directory comparison tool
+  #
+  #   # L
+  #   # lukesmithxyz-bible-kjv
+  #   libimobiledevice
+  #   linuxPackages.v4l2loopback
+  #   lynx
+  #
+  #   # M
+  #   man-pages
+  #   man-pages-posix
+  #   # mango
+  #
+  #   # N
+  #   ncdu
+  #   neovim
+  #   nil
+  #   niri
+  #   nmap
+  #   # nixd # old nix formatter
+  #   nudoku
+  #
+  #   # O
+  #
+  #   # P
+  #   pciutils
+  #   # install pass w/ pass-otp
+  #   (pass.withExtensions (e: [
+  #     e.pass-otp
+  #   ]))
+  #   pinentry-curses
+  #   playerctl
+  #   podman
+  #
+  #   # Q
+  #   inputs.qml-niri.packages.${system}.quickshell
+  #   quickshell
+  #   # inputs.qml-niri.packages.${system}.default
+  #   # inputs.qml-niri.packages.${system}.quickshell
+  #
+  #   # R
+  #   ripgrep
+  #
+  #   # S
+  #   socat
+  #
+  #   # T
+  #   timg
+  #   tmux
+  #   tree
+  #   tuigreet
+  #
+  #   # U
+  #   unzip
+  #   unrar-free
+  #   usbmuxd
+  #   usbutils
+  #   uxplay
+  #
+  #   # V
+  #   v4l-utils
+  #   vifm
+  #   vim
+  #
+  #   # W
+  #   w3m
+  #   wayland
+  #   wayland-protocols
+  #   wev
+  #   wget
+  #   wikiman # -- external sources broken
+  #   wl-clipboard
+  #
+  #   # X
+  #   # xdg-desktop-portal-termfilechooser
+  #   xurls
+  #   xwayland-satellite
+  #
+  #   # Y
+  #
+  #   # Z
+  #
+  # ];
 
-    # B
-    brightnessctl
-    btop
-
-    # C
-    chafa
-    # inputs.concord.packages.${system}.default
-    # inputs.canban."${pkgs.stdenv.hostPlatform.system}".default
-
-    # D
-
-    # E
-    elinks
-
-    # F
-    fd
-    foot
-    fprintd
-
-    # G
-    git
-    gnumake
-    gphoto2
-    greetd
-
-    # H
-    home-manager
-
-    # I
-    ifuse
-    inxi
-    irssi
-
-    # J
-    jq
-
-    # K
-    killall
-    kjv
-    kmonad
-    # KDE Utilities
-    # kdePackages.discover # Optional: Software center for Flatpaks/firmware updates
-    # kdePackages.kcalc # Calculator
-    # kdePackages.kcharselect # Character map
-    # kdePackages.kclock # Clock app
-    # kdePackages.kcolorchooser # Color picker
-    # kdePackages.kolourpaint # Simple paint program
-    # kdePackages.ksystemlog # System log viewer
-    # kdePackages.sddm-kcm # SDDM configuration module
-    # kdiff3 # File/directory comparison tool
-
-    # L
-    # lukesmithxyz-bible-kjv
-    libimobiledevice
-    linuxPackages.v4l2loopback
-    lynx
-
-    # M
-    man-pages
-    man-pages-posix
-    # mango
-
-    # N
-    ncdu
-    neovim
-    nil
-    niri
-    nmap
-    # nixd # old nix formatter
-    nudoku
-
-    # O
-
-    # P
-    pciutils
-    # install pass w/ pass-otp
-    (pass.withExtensions (e: [
-      e.pass-otp
-    ]))
-    pinentry-curses
-    playerctl
-    podman
-
-    # Q
-    inputs.qml-niri.packages.${system}.quickshell
-    quickshell
-    # inputs.qml-niri.packages.${system}.default
-    # inputs.qml-niri.packages.${system}.quickshell
-
-    # R
-    ripgrep
-
-    # S
-    socat
-
-    # T
-    timg
-    tmux
-    tree
-    tuigreet
-
-    # U
-    unzip
-    unrar-free
-    usbmuxd
-    usbutils
-    uxplay
-
-    # V
-    v4l-utils
-    vifm
-    vim
-
-    # W
-    w3m
-    wayland
-    wayland-protocols
-    wev
-    wget
-    wikiman # -- external sources broken
-    wl-clipboard
-
-    # X
-    # xdg-desktop-portal-termfilechooser
-    xurls
-    xwayland-satellite
-
-    # Y
-
-    # Z
-
-  ];
-
-  environment.wordlist = {
-    enable = true;
-    lists = {
-      WORDLIST = [ "${pkgs.scowl}/share/dict/words.txt" ];
-    };
-  };
+  # environment.wordlist = {
+  #   enable = true;
+  #   lists = {
+  #     WORDLIST = [ "${pkgs.scowl}/share/dict/words.txt" ];
+  #   };
+  # };
 
   documentation = {
     man = {
@@ -420,17 +416,6 @@
   };
 
   services.usbmuxd.enable = true;
-
-  # fileSystems."/run/media/fugue/OP-1" = {
-  #   device = "/james";
-  #   fsType = "ext4";
-  #   enable = true;
-  #   options = [
-  #     "users"
-  #     "nofail"
-  #     "exec"
-  #   ];
-  # };
 
   fonts.packages = with pkgs; [
     nerd-fonts.victor-mono
@@ -490,8 +475,6 @@
   # FLAKE USAGE for ???
   # nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
   # add `inputs` to attrset args at top of file
-
-  # List services that you want to enable:
 
   system.stateVersion = "25.11"; # Did you read the comment?
 

@@ -17,6 +17,7 @@
     enable = true;
     settings = {
       # settings here
+      color = "233948";
 
     };
   };

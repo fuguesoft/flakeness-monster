@@ -11,7 +11,7 @@
         User fugue
         IdentityFile ~/.ssh/znc_ed25519
         IdentitiesOnly yes
-        
+
       #homelab
       Host konohagakure
         Hostname 192.168.0.133

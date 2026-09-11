@@ -76,6 +76,7 @@
             ./configuration.nix
             ./desktop
             ./keyboard
+            ./env
           ];
         };
         # another hostname
