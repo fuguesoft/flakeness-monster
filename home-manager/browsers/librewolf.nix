@@ -15,6 +15,30 @@
 
     # nativeMessagingHosts = [];
 
+    # profiles = {
+    #   f8 = {
+    #     id = 0;
+    #     settings = {
+    #       "browser.startup.homepage" = "https://duckduckgo.org";
+    #       "sidebar.verticalTabs" = true;
+    #       "customizableui.verticalTabs.defaultCollapsed" = true;
+    #       "sidebar.verticalTabs.dragToPinPromo.dismissed" = true;
+    #       "browser.tabs.tabClipWidth" = 140;
+    #       "browser.tabs.tabMinWidth" = 76;
+    #       "devtools.toolbox.sidebar.width" = 500;
+    #     };
+    #
+    #   };
+    #
+    #   f13 = {
+    #     id = 1;
+    #     settings = {
+    #       "browser.startup.homepage" = "https://github.com";
+    #       "sidebar.verticalTabs" = true;
+    #     };
+    #   };
+    # };
+
     policies = {
       Cookies = {
         "Allow" = [
@@ -73,28 +97,33 @@
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/betterttv/latest.xpi";
           installation_mode = "force_installed";
         };
+
         "addon@darkreader.org" = {
           default_area = "navbar";
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/darkreader/latest.xpi";
           installation_mode = "force_installed";
           private_browsing = true;
         };
+
         "default-compact-dark-theme@glitchii.github.io" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/default-compact-dark-theme/latest.xpi";
           installation_mode = "force_installed";
           private_browsing = true;
         };
+
         # "actual-default-dark-theme-goes-here" = {
         #   install_url =
         #   "https://addons.mozilla.org/en-US/firefox/addon/default-compact-dark-theme/";
         #   installation_mode = "";
         #   private_browsing = true;
         # };
+
       };
       # https://addons.mozilla.org/en-US/firefox/addon/default-compact-dark-theme/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
       Homepage = {
         # "URL" = "https://noai.duckduckgo.com"; # backup
-        "URL" = "moz-extension://684c8205-dbcb-479c-adeb-8af56ee719a0/static/newtab.html";
+        "URL" = "moz-extension://9b389777-2c23-4f20-9e1c-08c345924104/static/newtab.html";
+        # "URL" = "moz-extension://684c8205-dbcb-479c-adeb-8af56ee719a0/static/newtab.html";
         "StartPage" = "previous-session";
       };
 

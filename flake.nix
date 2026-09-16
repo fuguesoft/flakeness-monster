@@ -32,10 +32,14 @@
       flake = false;
     };
     # affinity-nix.url = "github:mrshmllow/affinity-nix";
-    iamb-vaw = {
-      url = "github:VAWVAW/iamb";
+    iamb = {
+      url = "github:ulyssa/iamb"; # main project
+      # url = "github:VAWVAW/iamb"; # more featureful fork
       # url = "path:/home/fugue/dev/nix/packaging/iamb";
       # flake = false;
+    };
+    glide = {
+      url = "github:glide-browser/glide";
     };
     canban = {
       url = "github:fuguesoft/canban/feat/nix-compat";

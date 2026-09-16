@@ -19,10 +19,11 @@
         ];
         "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
       };
+
       niri = {
         default = [
-          "gtk4"
-          # "gnome"
+          # "gtk4"
+          "gnome"
         ];
         "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
         "org.freedesktop.impl.portal.ScreenCast" = "gnome";
@@ -44,6 +45,7 @@
       env=TERMCMD="${pkgs.foot}/bin/foot"
     '';
   };
+
   xdg.desktopEntries = {
     mvi = {
       name = "mvi";
@@ -55,6 +57,7 @@
       ];
       mimeType = [ "image/*" ];
     };
+
     # nsxiv-gallery = {
     #   name = "nsxiv-gallery";
     #   genericName = "Photo Viewer";

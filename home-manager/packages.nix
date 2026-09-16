@@ -77,7 +77,7 @@
     hyfetch
 
     # I
-    inputs.iamb-vaw.packages."${pkgs.stdenv.hostPlatform.system}".default
+    inputs.iamb.packages."${pkgs.stdenv.hostPlatform.system}".default
     inetutils
     inkscape
     isort
