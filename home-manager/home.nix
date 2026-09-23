@@ -31,19 +31,19 @@ in
 
   # modules
   imports = [
-    ./browsers
-    ./fish.nix
-    ./fuzzel.nix
-    ./git.nix
-    ./gtk.nix
-    ./mpv.nix
-    ./neovim.nix
-    ./obs.nix
+    # ./browsers
+    # ./fish.nix
+    # ./fuzzel.nix
+    # ./git.nix
+    # ./gtk.nix
+    # ./mpv.nix
+    # ./neovim.nix
+    # ./obs.nix
     ./programs
     ./services
-    ./ssh.nix
-    ./styling.nix
-    ./weechat.nix
+    # ./ssh.nix
+    # ./styling.nix
+    # ./weechat.nix
     ./xdg
     # ./znc.nix
   ];

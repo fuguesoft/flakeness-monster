@@ -1,6 +1,6 @@
 {
   imports = [
     ./swaylock.nix
-    ./znc.nix
+    # ./znc.nix
   ];
 }

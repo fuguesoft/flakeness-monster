@@ -5,7 +5,7 @@
     timeouts = [
       {
         timeout = 60;
-        command = "${pkgs.swalock}/bin/swaylock -fF";
+        command = "${pkgs.swaylock}/bin/swaylock -fF";
       }
       {
         timeout = 90;

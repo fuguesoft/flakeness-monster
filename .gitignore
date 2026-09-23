@@ -1,5 +1,8 @@
 # hardware-configuration.nix
-znc.*
-ssh.*
-home-manager/ssh.*
-home-manager/znc.*
+# znc.*
+# ssh.*
+# home-manager/ssh.*
+# home-manager/znc.*
+# home-manager/programs/ssh.*
+# home-manager/programs/znc.*
+

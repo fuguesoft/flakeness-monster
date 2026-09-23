@@ -8,7 +8,6 @@
 
   imports = [
     ./browsers
-    ./calcurse.nix
     ./fish.nix
     ./fuzzel.nix
     ./git.nix
@@ -20,7 +19,6 @@
     ./ssh.nix
     ./styling.nix
     ./streamlink.nix
-    ./weechat.nix
   ];
 
   home.packages = with pkgs; [
