@@ -15,29 +15,29 @@
 
     # nativeMessagingHosts = [];
 
-    # profiles = {
-    #   f8 = {
-    #     id = 0;
-    #     settings = {
-    #       "browser.startup.homepage" = "https://duckduckgo.org";
-    #       "sidebar.verticalTabs" = true;
-    #       "customizableui.verticalTabs.defaultCollapsed" = true;
-    #       "sidebar.verticalTabs.dragToPinPromo.dismissed" = true;
-    #       "browser.tabs.tabClipWidth" = 140;
-    #       "browser.tabs.tabMinWidth" = 76;
-    #       "devtools.toolbox.sidebar.width" = 500;
-    #     };
-    #
-    #   };
-    #
-    #   f13 = {
-    #     id = 1;
-    #     settings = {
-    #       "browser.startup.homepage" = "https://github.com";
-    #       "sidebar.verticalTabs" = true;
-    #     };
-    #   };
-    # };
+    profiles = {
+      f8 = {
+        id = 0;
+        settings = {
+          "browser.startup.homepage" = "https://noai.duckduckgo.com";
+          "sidebar.verticalTabs" = true;
+          "customizableui.verticalTabs.defaultCollapsed" = true;
+          "sidebar.verticalTabs.dragToPinPromo.dismissed" = true;
+          "browser.tabs.tabClipWidth" = 140;
+          "browser.tabs.tabMinWidth" = 76;
+          "devtools.toolbox.sidebar.width" = 50;
+        };
+
+      };
+
+      f13 = {
+        id = 1;
+        settings = {
+          "browser.startup.homepage" = "https://github.com";
+          "sidebar.verticalTabs" = true;
+        };
+      };
+    };
 
     policies = {
       Cookies = {
@@ -122,7 +122,8 @@
       # https://addons.mozilla.org/en-US/firefox/addon/default-compact-dark-theme/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
       Homepage = {
         # "URL" = "https://noai.duckduckgo.com"; # backup
-        "URL" = "moz-extension://9b389777-2c23-4f20-9e1c-08c345924104/static/newtab.html";
+        "URL" = "moz-extension://ad75ce67-4ad4-4c05-bd9b-d1327dc7a168/static/newtab.html";
+        # "URL" = "moz-extension://9b389777-2c23-4f20-9e1c-08c345924104/static/newtab.html";
         # "URL" = "moz-extension://684c8205-dbcb-479c-adeb-8af56ee719a0/static/newtab.html";
         "StartPage" = "previous-session";
       };
@@ -236,21 +237,23 @@
     settings = {
       "widget.use-xdg-desktop-portal.file-picker" = 1;
       "browser.tabs.unloadOnLowMemory" = true;
-      "browser.uiCustomization.navBarWhenVerticalTabs" =
-        "[sidebar-button,
-        back-button,
-        forward-button,
-        stop-reload-button,
-        home-button,
-        customizableui-special-spring1,
-        vertical-spacer,
-        urlbar-container,
-        customizableui-special-spring2,
-        downloads-button,
-        fxa-toolbar-menu-button,
-        unified-extensions-button,
-        addon_darkreader_org-browser-action,
-        ublock0_raymondhill_net-browser-action]";
+      # "browser.uiCustomization.navBarWhenVerticalTabs" =
+      #   "[
+      #   unified-extensions-button,
+      #   downloads-button,
+      #   home-button,
+      #   customizableui-special-spring1,
+      #   vertical-spacer,
+      #   urlbar-container,
+      #   stop-reload-button,
+      #   forward-button,
+      #   back-button,
+      #   customizableui-special-spring2,
+      #   fxa-toolbar-menu-button,
+      #   sidebar-button,
+      #   addon_darkreader_org-browser-action,
+      #   ublock0_raymondhill_net-browser-action
+      #   ]";
 
       "extenstions.activeThemeID" = "firefox-compact-dark@mozilla.org";
       "sidebar.verticalTabs" = true;

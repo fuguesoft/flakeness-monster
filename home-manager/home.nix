@@ -39,7 +39,8 @@ in
     ./mpv.nix
     ./neovim.nix
     ./obs.nix
-    ./packages.nix
+    ./programs
+    ./services
     ./ssh.nix
     ./styling.nix
     ./weechat.nix

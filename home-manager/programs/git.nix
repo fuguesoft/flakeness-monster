@@ -1,0 +1,60 @@
+{
+  programs.git = {
+    enable = true;
+    settings = {
+      core.editor = "nvim";
+      user = {
+        name = "fuguesoft";
+        email = "31870368+fuguesoft@users.noreply.github.com";
+      };
+      # includeIf = {
+      #   "gitdir:~/documentos/personal/**".path = "~/documentos/personal/.gitconfig";
+      # };
+      init.defaultbranch = "main";
+    };
+    includes = [
+      {
+        condition = "gitdir:~/documentos/_personal/**";
+        path = "~/documentos/_personal/.gitconfig";
+      }
+    ];
+  };
+
+  programs.gh = {
+    enable = true;
+    settings = {
+      telemetry = false;
+      doNotTrack = true;
+    };
+  };
+
+  programs.gh-dash = {
+    enable = true;
+    settings = {
+      defaults = {
+        view = "notifications";
+      };
+      confirmQuit = true;
+      includeReadNotifications = false;
+      smartFilteringAtLaunch = false;
+    };
+  };
+
+  # Git
+  # programs.git = {
+  #   enable = true;
+  #   userName = "";
+  #   userEmail = "";
+  #   aliases = {
+  #     alias1 = "git command1";
+  #     alias2 = "git command2";
+  #     alias3 = "git command3";
+  #   };
+  # };
+
+  # Removed due to required upstream changes
+  #
+  # programs.glab = {
+  #   enable = true;
+  # };
+}
