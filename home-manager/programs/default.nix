@@ -76,6 +76,7 @@
     freetube
     # fugue-kabmat
     furnace
+    inputs.flow.packages."${pkgs.stdenv.hostPlatform.system}".default
 
     # G
     gh
@@ -130,6 +131,15 @@
     nethack
     nom
     nsxiv
+    # pkgs.writeShellApplication
+    # {
+    #   name = "ntv";
+    #   runtimeInputs = [
+    #     fzf
+    #     nix-search-tv
+    #   ];
+    #   text = builtins.readFile "${pkgs.nix-search-tv.src}/nixpkgs.sh";
+    # }
 
     # O
     obs-cli
@@ -145,6 +155,7 @@
     pixieditor
     portal
     pqiv
+    presenterm
     proton-vpn
     proton-vpn-cli
     pureref
@@ -183,7 +194,7 @@
     tagainijisho
     tcpdump
     teensy-loader-cli
-    # tic-80 # requires insecure
+    tic-80 # requires insecure
     # whole buncha tmux plugins
     tlrc
     tintin

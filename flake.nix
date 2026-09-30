@@ -44,6 +44,9 @@
     canban = {
       url = "github:fuguesoft/canban/feat/nix-compat";
     };
+    flow = {
+      url = "path:/home/fugue/dev/nix/packaging/flow";
+    };
     # kanban-tui = {
     #   url = "path:///home/fugue/dev/nix/kanban-tui/";
     # };

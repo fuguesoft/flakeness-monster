@@ -23,9 +23,9 @@
           "sidebar.verticalTabs" = true;
           "customizableui.verticalTabs.defaultCollapsed" = true;
           "sidebar.verticalTabs.dragToPinPromo.dismissed" = true;
-          "browser.tabs.tabClipWidth" = 140;
-          "browser.tabs.tabMinWidth" = 76;
-          "devtools.toolbox.sidebar.width" = 50;
+          # "browser.tabs.tabClipWidth" = 140;
+          # "browser.tabs.tabMinWidth" = 76;
+          # "devtools.toolbox.sidebar.width" = 50;
         };
 
       };

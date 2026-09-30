@@ -83,8 +83,10 @@
     nudoku
 
     # O
+    openmoji-color
 
     # P
+    passage
     pciutils
     # install pass w/ pass-otp
     (pass.withExtensions (e: [
