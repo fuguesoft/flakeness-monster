@@ -6,53 +6,66 @@
     # Use `nix flake update` to update the flake to the latest revision of the chosen release channel.
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     # mnw.url = "github:Gerg-L/mnw";
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     quickshell = {
       url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     qml-niri = {
       url = "github:imiric/qml-niri/main";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.quickshell.follows = "quickshell";
     };
+
     concord = {
       # url = "github:chojs23/concord/f6f783aa257840addcb8b2d10e7fea597f310a48";
       url = "github:chojs23/concord/";
     };
+
     yt-x = {
       url = "github:Benexl/yt-x";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     kabmat = {
       url = "github:fuguesoft/packaging-practice";
       flake = false;
     };
+
     # affinity-nix.url = "github:mrshmllow/affinity-nix";
+
     iamb = {
       url = "github:ulyssa/iamb"; # main project
       # url = "github:VAWVAW/iamb"; # more featureful fork
       # url = "path:/home/fugue/dev/nix/packaging/iamb";
       # flake = false;
     };
+
     glide = {
       url = "github:glide-browser/glide";
     };
+
     canban = {
       url = "github:fuguesoft/canban/feat/nix-compat";
     };
+
     flow = {
       url = "path:/home/fugue/dev/nix/packaging/flow";
     };
+
     # kanban-tui = {
     #   url = "path:///home/fugue/dev/nix/kanban-tui/";
     # };
     # mpv-youtube-search = {
     #   url = "github:willswats/mpv-youtube-search";
     # };
+
   };
 
   outputs =
