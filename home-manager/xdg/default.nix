@@ -22,27 +22,32 @@
 
       niri = {
         default = [
-          # "gtk4"
-          "gnome"
+          "gtk4"
+          # "gnome"
         ];
         "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
         "org.freedesktop.impl.portal.ScreenCast" = "gnome";
         "org.freedesktop.impl.portal.Screenshot" = "gnome";
         "org.freedesktop.impl.portal.RemoteDesktop" = "gnome";
-        "org.freedesktop.impl.portal.AppChooser" = "gtk4";
+        # "org.freedesktop.impl.portal.AppChooser" = "gtk4";
       };
     };
   };
 
   xdg.configFile."xdg-desktop-portal-termfilechooser/config" = {
     force = true;
+    executable = true;
     # enable = true;
     # how can I make this look nicer with an 80 char wrap?
     text = ''
       [filechooser]
       cmd=$XDG_CONFIG_HOME/xdg-desktop-portal-termfilechooser/v-wrap.sh
       default_dir=$XDG_DOWNLOAD_DIR
+      create_help_file=1
       env=TERMCMD="${pkgs.foot}/bin/foot"
+      env=PATH="$PATH:/run/current-system/sw/bin"
+      open_mode=suggested
+      save_mode=last
     '';
   };
 
