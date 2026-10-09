@@ -54,6 +54,13 @@
         IdentityFile ~/.ssh/_berg_ed25519
         IdentitiesOnly yes
 
+      # Personal tsuki account
+      Host git.tsuki.games
+        Hostname git.tsuki.games
+        User git
+        IdentityFile ~/.ssh/_tsuki_ed25519
+        IdentitiesOnly yes
+
       Host *
         ControlMaster auto
         # ControlPath ~/.ssh/sockets/%r@%h-%p
