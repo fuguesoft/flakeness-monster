@@ -185,7 +185,7 @@
     # soundtracker
     sox
     streamlink
-    streamlink-twitch-gui-bin
+    # streamlink-twitch-gui-bin
     # sway
     swaybg
     stremio-linux-shell # outdated qt-engine dependency
@@ -268,6 +268,7 @@
       "affinity-v3"
       "affinity-extracted-sources"
       "bitwig-studio-unwrapped"
+      "bluebubbles"
       "aseprite"
       "graphite"
       "lutris"
