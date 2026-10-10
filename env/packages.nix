@@ -35,6 +35,7 @@
     gnumake
     gphoto2
     greetd
+    git-lfs
 
     # H
     home-manager

@@ -1,6 +1,7 @@
 {
   programs.git = {
     enable = true;
+    lfs.enable = true;
     settings = {
       core.editor = "nvim";
       user = {
@@ -25,6 +26,11 @@
     settings = {
       telemetry = false;
       doNotTrack = true;
+      git_protocol = "ssh";
+      color_labels = "enabled";
+      # accessible_colors = "enabled";
+      # accessible_prompter = "enabled";
+      # prefer_editor_prompt = "enabled";
     };
   };
 
