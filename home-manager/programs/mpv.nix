@@ -1,5 +1,6 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
+
   programs.mpv = {
     enable = true;
     scripts = with pkgs.mpvScripts; [
@@ -87,6 +88,7 @@
       ytdl-format = "bestvideo[vcodec^=avc1][height<=1080]+bestaudio/best";
 
     };
+
     profiles = {
       console-subs = {
         profile-desc = "move subs to top when console is open";
@@ -96,4 +98,20 @@
       };
     };
   };
+
+  programs.yt-dlp = {
+    enable = true;
+    package = pkgs.yt-dlp.overrideAttrs (
+      final: prev: {
+        version = "yt-dlp-nightly-2026.08.17.073947";
+        src = pkgs.fetchFromGitHub {
+          owner = "yt-dlp";
+          repo = "yt-dlp";
+          rev = "f1896c57f5ba4b92741bb509790837d6838ec99e";
+          hash = "sha256-suCz+O7d6DT4ocU/et4gOfhePNaD8mrGEpbfKEOrjr4=";
+        };
+      }
+    );
+  };
+
 }
