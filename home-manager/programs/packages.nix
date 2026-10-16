@@ -73,6 +73,7 @@
     gurk-rs
 
     # H
+    handlr
     havn
     help2man
     heroic

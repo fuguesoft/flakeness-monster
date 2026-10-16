@@ -132,6 +132,7 @@
       "application/x-kdenlive" = [ "org.kde.kdenlive.desktop" ];
       "application/x-perl" = [ "nvim.desktop" ];
       "application/x-shellscript" = [ "nvim.desktop" ];
+      "application/octet-stream" = [ "pureref.desktop" ];
       "audio/3gpp" = [ "mpv.desktop" ];
       "audio/3gpp2" = [ "mpv.desktop" ];
       "audio/AMR" = [ "mpv.desktop" ];
